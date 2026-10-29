@@ -1,0 +1,27 @@
+# Example configuration. Contains no secrets: database credentials will be
+# supplied through environment variables (e.g. DATABASE_URL), never in this file.
+
+# Endpoint given in the assignment. On 2026-10-28 it redirected to an HTML page
+# (geobasis-bb.de INSPIRE-Zentrale) instead of returning WFS XML.
+service_url: https://inspire.brandenburg.de/services/oekokonto_wfs
+layer: bb_flaechenpool
+wfs_version: "2.0.0"
+
+page_size: 500            # features per GetFeature request
+max_pages: 200            # hard stop, protects against endless paging
+timeout_s: 60
+request_delay_s: 0.5      # pause between requests (polite, controlled harvesting)
+max_retries: 3
+user_agent: "iris-oek-bb-harvester/0.1 (technical assessment)"
+output_format: null       # e.g. "application/json" if the server advertises it
+sort_by: null             # property name for stable paging, if the schema offers one
+
+target_crs: "EPSG:25832"  # fixed by the assignment
+area_crs: "EPSG:25833"    # Brandenburg's UTM zone; used ONLY to compute area_geom_m2 (geometry stays in 25832)
+source_crs_fallback: null # used only if a response carries no CRS; null = reject such data
+plausible_bounds: [600000, 5650000, 950000, 5980000]   # xmin, ymin, xmax, ymax in EPSG:25832
+
+area_mismatch_tolerance: 0.10   # warn when declared and geometry-derived area differ by more than 10 %
+
+raw_dir: null             # e.g. "data/raw" to keep every raw response as provenance
+report_dir: reports

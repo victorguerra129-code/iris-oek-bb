@@ -1,0 +1,38 @@
+# Source-to-target mapping for the Brandenburg compensation-site harvester.
+#
+# IMPORTANT: the live WFS (layer bb_flaechenpool) could not be reached on
+# 2026-10-28 (the endpoint redirected to an HTML page), so every SOURCE field
+# name below is a HYPOTHETICAL placeholder. Replace them with the real attribute
+# names reported by DescribeFeatureType before a live run. No code change needed.
+
+state_code: BB
+
+fields:                         # target concept -> source attribute name
+  site_id: id
+  site_name: name
+  municipality: gemeinde
+  cadastral_district: gemarkung
+  status: status
+  area_value: flaeche
+
+area:
+  unit_field: flaeche_einheit   # source attribute holding the unit, or null
+  default_unit: null            # used only when unit_field is empty; null = never convert
+  unit_factors:                 # normalized unit label (lower case) -> square metres
+    m2: 1.0
+    ha: 10000.0
+    km2: 1000000.0
+
+# Lower-case source value -> normalized status. Any other non-empty value is
+# stored as "unmapped" (never guessed). Target values are illustrative.
+status_map:
+  geplant: planned
+  in planung: planned
+  in umsetzung: in_progress
+  umgesetzt: implemented
+  anerkannt: approved
+  abgeschlossen: completed
+
+# Source attributes copied as-is into the eco_credit_fields JSON column.
+eco_credit_fields:
+  - oekopunkte

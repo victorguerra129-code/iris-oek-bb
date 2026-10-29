@@ -1,0 +1,52 @@
+# Isolated staging stack: a throw-away PostGIS database plus the harvester.
+# Secrets are NOT stored here: copy .env.example to .env and set a local password.
+#
+#   docker compose up --build --abort-on-container-exit app     # init-db, check-db, load fixture
+#   docker compose run --rm tests                               # full test suite incl. database tests
+#   docker compose down -v                                      # remove containers and data
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-iris_oek}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env (see .env.example)}
+      POSTGRES_DB: ${POSTGRES_DB:-iris_staging_dev}
+    ports:
+      - "127.0.0.1:5433:5432"        # localhost only; 5433 avoids clashing with a local PostgreSQL
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      # one-time admin step (PostGIS extension + iris_staging schema), run on first start only
+      - ./sql/00_prerequisites.sql:/docker-entrypoint-initdb.d/00_prerequisites.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+
+  app:
+    build: .
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-iris_oek}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-iris_staging_dev}
+    volumes:
+      - ./reports:/app/reports
+    command: >
+      sh -c "python scripts/run.py init-db &&
+             python scripts/run.py check-db &&
+             python scripts/run.py run --source fixture &&
+             python scripts/run.py run --source fixture"
+
+  tests:
+    build: .
+    profiles: ["test"]
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-iris_oek}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-iris_staging_dev}
+    command: python -m pytest -q
+
+volumes:
+  pgdata:

@@ -1,0 +1,26 @@
+{
+  "run": {
+    "source": "fixture",
+    "source_url": "fixture://sample_sites.geojson",
+    "layer": "bb_flaechenpool"
+  },
+  "total_processed": 10,
+  "outcomes": {
+    "ok": 4,
+    "repaired": 1,
+    "rejected": 5
+  },
+  "rejection_reasons": {
+    "missing_site_id": 1,
+    "duplicate_site_id": 1,
+    "no_polygonal_geometry": 1,
+    "missing_geometry": 1,
+    "outside_plausible_bounds": 1
+  },
+  "warnings": {
+    "area_mismatch": 1,
+    "area_unit_missing": 1,
+    "unmapped_status": 1,
+    "unparseable_area": 1
+  }
+}

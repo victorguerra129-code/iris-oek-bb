@@ -1,0 +1,20 @@
+# Runtime dependencies, fully pinned. Tests without database run by the author on Windows, Python 3.11.
+certifi==2026.10.23
+charset-normalizer==3.5.2
+geopandas==1.2.0
+idna==3.20
+numpy==2.4.4
+pandas==3.0.2
+psycopg==3.3.6
+psycopg-binary==3.3.6
+pyogrio==0.13.0
+pyproj==3.7.2
+python-dateutil==3.0.0
+PyYAML==6.0.3
+requests==2.33.1
+shapely==2.2.0
+six==1.17.0
+SQLAlchemy==2.1.6
+typing_extensions==4.16.0
+tzdata==2026.6
+urllib3==2.8.0

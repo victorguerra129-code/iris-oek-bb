@@ -1,0 +1,10 @@
+source_row,site_id,outcome,reasons,warnings,raw_properties
+1,BB-002,ok,,area_mismatch,
+2,BB-003,repaired,,,
+3,,rejected,missing_site_id,,"{""id"": null, ""name"": ""Site without identifier"", ""gemeinde"": ""Cottbus"", ""gemarkung"": ""Cottbus"", ""status"": ""geplant"", ""flaeche"": ""1200"", ""flaeche_einheit"": ""m2"", ""oekopunkte"": null, ""_source_geom_wkt"": ""POLYGON ((370000 5807000, 370050 5807000, 370050 5807050, 370000 5807050, 370000 5807000))""}"
+4,BB-001,rejected,duplicate_site_id,,"{""id"": ""BB-001"", ""name"": ""Duplicate of BB-001"", ""gemeinde"": ""Bad Belzig"", ""gemarkung"": ""Belzig"", ""status"": ""Umgesetzt"", ""flaeche"": ""1,0"", ""flaeche_einheit"": ""ha"", ""oekopunkte"": 12500.0, ""_source_geom_wkt"": ""POLYGON ((368000 5807000, 368100 5807000, 368100 5807100, 368000 5807100, 368000 5807000))""}"
+5,BB-006,rejected,no_polygonal_geometry,,"{""id"": ""BB-006"", ""name"": ""Line instead of polygon"", ""gemeinde"": ""Rathenow"", ""gemarkung"": ""Rathenow"", ""status"": ""geplant"", ""flaeche"": ""400"", ""flaeche_einheit"": ""m2"", ""oekopunkte"": null, ""_source_geom_wkt"": ""LINESTRING (371000 5807000, 371100 5807050)""}"
+6,BB-007,rejected,missing_geometry,,"{""id"": ""BB-007"", ""name"": ""No geometry"", ""gemeinde"": ""Luckau"", ""gemarkung"": ""Luckau"", ""status"": ""geplant"", ""flaeche"": ""800"", ""flaeche_einheit"": ""m2"", ""oekopunkte"": null, ""_source_geom_wkt"": null}"
+7,BB-008,rejected,outside_plausible_bounds,,"{""id"": ""BB-008"", ""name"": ""Outside Brandenburg"", ""gemeinde"": ""Unknown"", ""gemarkung"": ""Unknown"", ""status"": ""geplant"", ""flaeche"": ""900"", ""flaeche_einheit"": ""m2"", ""oekopunkte"": null, ""_source_geom_wkt"": ""POLYGON ((700000 5300000, 700100 5300000, 700100 5300100, 700000 5300100, 700000 5300000))""}"
+8,BB-009,ok,,area_unit_missing;unmapped_status,
+9,BB-010,ok,,unparseable_area,

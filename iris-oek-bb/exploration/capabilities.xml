@@ -1,0 +1,1876 @@
+<!DOCTYPE html>
+<html lang="de" id="mais2red.c.36703.de">
+  <head>
+                    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width"/>
+    <title>INSPIRE-Zentrale | LGB_Startseite</title>
+
+
+        
+    <meta name="description" content="Dienstleister"/>
+    <meta name="keywords" content="INSPIRE, Inspire, Web-Dienste"/>
+
+    
+    
+    <link type="text/css" rel="stylesheet" href="https://style.brandenburg.de/2_7/css/vendors/vendor.min.css"/>
+	<script>
+	    (function(){
+		var cookies, theme, themes = [];
+		function readCookie(name,c,C,i){
+		    if(cookies){ return cookies[name]; }
+		    c = document.cookie.split('; ');
+		    cookies = {};
+		    for(i=c.length-1; i>=0; i--){
+			C = c[i].split('=');
+			cookies[C[0]] = C[1];
+		    }
+		    return cookies[name];
+		}
+		    theme = readCookie("ThemeCookie");
+		if (theme && theme != "undefined") {
+                        document.write("<link type=\"text/css\" translate=\"no\" title=\"standard\" rel=\"stylesheet\" href=\"https://style.brandenburg.de/2_7/css/themes/colorsonly/" + theme + ".css\">");
+            document.write("<link type=\"text/css\" translate=\"no\" title=\"standard\" rel=\"stylesheet\" href=\"https://style.brandenburg.de/2_7/css/themes/base.css\">");
+            
+		}else{
+        
+                    document.write("<link type=\"text/css\" translate=\"no\" title=\"standard\" rel=\"stylesheet\" href=\"https://style.brandenburg.de/2_7/css/themes/colorsonly/Blau-2043A2.css\">");
+            document.write("<link type=\"text/css\" translate=\"no\" title=\"standard\" rel=\"stylesheet\" href=\"https://style.brandenburg.de/2_7/css/themes/base.css\">");
+            
+		}
+	    })();
+	</script>
+
+            <link type="text/css" rel="stylesheet" href="https://style.brandenburg.de/2_7/css/vendors/jquery-ui.css"/>
+      
+
+	<link rel="icon" type="image/x-icon" href="/sixcms/media.php/9/Logo-Farbe-Symbol.png" />
+	
+    
+<link rel="alternate" type="application/rss+xml" title="Karten,Daten und Dienste" href="/lgb/de/rss-aktuelle-meldungen/~karten-daten-und-diensterss.xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Aktuelles aus der LGB" href="/lgb/de/rss-aktuelle-meldungen/~aktuelles-aus-der-lgbrss.xml" />
+
+      <style>
+
+          /* mais2red.c.27371.de  mais2red.c.27371.de */
+
+          
+
+
+          .m2-fa:after, .m2-fa:before, div.bb-area-content a[href^="https://"]:not([href*="https://geobasis-bb.de"]):after, div.bb-area-content a:after {
+              font: normal normal normal 14px/1 'FontAwesome';
+              font-size: inherit;
+              text-rendering: auto;
+          }
+
+          div.bb-area-footer-content a[href^="https://"]:not([href*="https://geobasis-bb.de"]):after, div.bb-area-footer-content a:after {
+              font: normal normal normal 14px/1 'FontAwesome';
+              font-size: inherit;
+              text-rendering: auto;
+          }
+
+          div.bb-area-content a[href^="https://"]:not([href*="https://geobasis-bb.de"]):after {
+              content: "\f08e";
+              display: inline-block;
+              margin-left: 0.3rem;
+          }
+
+          div.bb-area-content a[href^="http://"]:not([href*="https://geobasis-bb.de"]):after {
+              content: "\f08e";
+              display: inline-block;
+              margin-left: 0.3rem;
+          }
+
+          div.bb-area-footer-content a[href^="https://"]:not([href*="https://geobasis-bb.de"]):after {
+              content: "\f08e";
+              display: inline-block;
+              margin-left: 0.3rem;
+          }
+
+          div.bb-area-footer-content a[href^="http://"]:not([href*="https://geobasis-bb.de"]):after {
+              content: "\f08e";
+              display: inline-block;
+              margin-left: 0.3rem;
+          }
+
+
+        
+   </style>
+                
+    
+
+
+<link rel="stylesheet" type="text/css" href="https://style.brandenburg.de/css/vendors/cookieconsent.min.css" />
+	<script src="https://style.brandenburg.de/js/vendors/cookieconsent.min.js"></script>
+	<script>
+	    window.addEventListener("load", function(){
+	    window.cookieconsent.initialise({
+         "elements": {
+             allow: '<a href="#" aria-label="allow cookies" title="Hier klicken um: Webanalyse zuzulassen" role="button" tabindex="0" class="cc-btn cc-allow">Webanalyse<br>zulassen</a>',
+             dismiss: '<a href="#" aria-label="dismiss cookie message" title="Hier klicken um: Webanalyse nicht zuzulassen" role="button" tabindex="0" class="cc-btn button cc-dismiss">Webanalyse<br>ablehnen</a>',
+         },
+        "palette": {
+                "popup": {
+                "background": "#efefef",
+                "text": "#404040"
+            },
+        },
+        revokable:true,
+        revokeBtn:"<a role=\"button\" id=\"activateconset\" href=\"#\" class=\"cc-revoke cc-top cc-color-override-648574014 \" tabindex=\"1\" title=\"Hier klicken um: Die Einwilligung zur Webanalyse ändern.\" style=\"display: none;\">Einwilligung</a>",
+
+        onStatusChange: function(status) {
+            console.log(this.hasConsented() ? 'disable cookies' : 'enable cookies');
+            if (status == "allow") {
+                window.location.reload(true);
+                sessionStorage.setItem("piwikid", "25");
+            }else{
+                sessionStorage.removeItem("piwikid");
+            }
+
+        },
+        "theme": "classic",
+        "position": "top",
+        "type": "opt-in",
+        "content": {
+		"href": "/lgb/de/datenschutz/",
+		"message":  "" + "<p>" +
+                    "<strong>Einwilligung</strong><br>" +
+                    "Wir (" +
+                    "Landesvermessung und Geobasisinformation Brandenburg" +
+                    ") möchten personenbezogene Daten verarbeiten, um Nutzungsstatistiken zu erstellen und die Darstellung der Website zu verbessern. Dazu erstellen wir aus den von Ihrem Gerät übermittelten Daten ein für maximal 24 Stunden gespeichertes pseudonymes Besucherprofil. Aus diesen Daten geht unter anderem hervor, was für einen Browser und was für ein Gerät Sie nutzen und welche Unterseiten Sie auf unserer Website aufrufen. Wir verwenden diese Daten nur in zusammengefasster, das heißt nicht auf Sie beziehbarer, Form. Dadurch können wir messen, wie beliebt unsere Seiten sind (Nutzungsstatistiken) und die Darstellung der Website verbessern.</p><p>Wenn Sie auf &quot;Webanalyse zulassen&quot; klicken, willigen Sie in die Verarbeitung Ihrer personenbezogener Daten zur oben beschriebenen Webanalyse ein. Wenn Sie auf &quot;Webanalyse ablehnen&quot; klicken, verarbeiten wir diese Daten nicht und Sie können die Website trotzdem nutzen.</p><p>Sie können Ihre Einwilligung jederzeit in diesem Einwilligungsbanner oder der Datenschutzerklärung widerrufen. Dort finden Sie auch weitere Informationen zur Webanalyse." +
+                    "<a href=\"#\" aria-label=\"dismiss cookie message\" tabindex=\"0\" class=\"cc-close\">&#x2716;</a>",
+        "allow": "Webanalyse<br>zulassen",
+        "dismiss": "Webanalyse<br>ablehnen",
+        "link": "Unsere Datenschutzerklärung."+"</p>",
+        "close": "&#x274c;",
+	      }
+	    })});
+	</script>	
+	    <!-- Piwik -->
+	    <script>
+            /* if user consented, set piwik id n storage and then initialize the variables */
+            if(sessionStorage.getItem('piwikid') !== null) {
+                var _paq = window._paq = window._paq || [];
+                /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+                _paq.push(['trackPageView']);
+                _paq.push(['enableLinkTracking']);
+                _paq.push(['setDoNotTrack', true]);
+                _paq.push(['disableCookies']);
+                (function () {
+                    var u ="https://matomo.brandenburg.de/";
+                    _paq.push(['setTrackerUrl', u + 'matomo.php']);
+                    _paq.push(['setSiteId', sessionStorage.getItem('piwikid')]);
+                    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+                    g.type = 'text/javascript';
+                    g.async = true;
+                    g.defer = true;
+                    g.src = u + 'matomo.js';
+                    s.parentNode.insertBefore(g, s);
+                })();
+            }
+	    </script>
+	    <!-- End Piwik Code -->
+	
+
+
+</head>
+
+<body>
+
+<div id="totop" class="bb-stage">
+    <div class="row bb-area-header opensearchserver.ignore">
+        <div class="columns">
+            <div class="row">
+    <div class="small-12 medium-6  columns m2-sprungmarke">
+        <nav aria-label="Sprunglinks">
+            <ul id="m2-sprungmarken">
+                <li><a tabindex="0" class="m2-sprung-unsichtbar" href="#activateconset">Einwilligung zur Webanalyse</a></li>
+                <li><a tabindex="0" class="m2-sprung-unsichtbar" href="#colorchange">Auswahl alternativer Farben</a></li>
+                <li><a tabindex="0" class="m2-sprung-unsichtbar" href="#bb-search-bar">Suche</a></li>
+                <li><a tabindex="0" class="m2-sprung-unsichtbar" href="#maincontent">Inhalt anspringen</a></li>
+                <li><a tabindex="0" class="m2-sprung-unsichtbar" href="#mainstart">Hauptnavigation anspringen</a></li>
+                                <li><a tabindex="0" class="m2-sprung-unsichtbar" href="#footernavigation">Servicebereich anspringen</a></li>
+            </ul>
+        </nav>
+        
+    </div>
+    <div class="small-12 medium-6  columns ">
+        <div class="title-bar bb-title-bar" data-responsive-toggle="bb-tool-menu" data-hide-for="medium">
+            
+                                    <button id="bb-toolbar-button" class="menu-icon bb-menu-icon" type="button" aria-label="Toolbar-Menü" data-toggle></button>
+                                    <!-- span for="bb-toolbar-button" class="bb-toolbar-button-bg" >Toolbar-Menü</span -->
+                                <div class="title-bar-title bb-title-bar-title" data-toggle>
+                                    Toolbar-Menü                                </div>        </div>
+        <div class="top-bar bb-top-tool-bar" id="bb-tool-menu">
+            <div class="top-bar-right">
+                <ul id="languagemenu" class="menu" data-responsive-menu="drilldown medium-dropdown" data-back-button='<li class="js-drilldown-back"><a title="Zurück">Zurück</a></li>'>
+                                                            
+
+                                                <li>
+                                                    <a data-linkhref="/lgb/de/" href="/lgb/de/" title="&#68;&#101;&#117;&#116;&#115;&#99;&#104;" class="bb-pipe-items" lang="de">
+                                                        de
+                                                    </a>
+                                                </li>
+                                                                                    
+
+<li id="colorchange" class="has-submenu" style="background: transparent !important;">
+<a id="acolorchange" href="#" title="Mit der Maus berühren um die Farbauswahl zu öffnen" class="bb-last-menu-element bb-is-submenu bb-theme-switcher">
+Farbwechsel
+<div id="firstdiv" style='white-space: break-spaces!important;position:absolute;background-color:#FFFFFF;border: 1px solid rgb(0, 0, 0); top: 0px; z-index: 1;left: 100px;top:25px;width: 200px;font-size: 0.8rem;padding: 0.2rem;display:none;'>Drücken Sie Enter oder Pfeil nach unten um Farbauswahl zu öffnen..</div>
+</a>
+<ul id="themeSwitcher" class="reso submenu menu vertical bb-submenu" data-submenu >
+
+						<li data-theme="Blau-2043A2"  style="position:relative;">
+						    <a href="#Standard" title='Klicken um die Farbauswahl auszuwählen.' class="bb-dropdown-items clickable">
+							<i class="fa fa-square bb-Blau-2043A2" aria-hidden="true"></i>
+							<i class="fa fa-square bb-Blau-2043A2Com" aria-hidden="true"></i>
+							Standard						    </a>
+                            <div style="position:absolute;background-color: white;border: 1px solid rgb(0, 0, 0);top: 0;z-index: 1;left: 180px;top:25px;width: 200px;font-size: 0.8rem;padding: 0.2rem;display:none;">Drücken Sie die Leertaste um Standard zu bestätigen.</div>
+						</li>
+
+						<li data-theme="Blau-2043A2"  style="position:relative;">
+						    <a href="#Monochrom" title='Klicken um die Farbauswahl auszuwählen.' class="bb-dropdown-items clickable">
+							<i class="fa fa-square bb-Blau-2043A2" aria-hidden="true"></i>
+							<i class="fa fa-square bb-Blau-2043A2Com" aria-hidden="true"></i>
+							Monochrom						    </a>
+                            <div style="position:absolute;background-color: white;border: 1px solid rgb(0, 0, 0);top: 0;z-index: 1;left: 180px;top:25px;width: 200px;font-size: 0.8rem;padding: 0.2rem;display:none;">Drücken Sie die Leertaste um Monochrom zu bestätigen.</div>
+						</li>
+
+</ul>
+</li>                </ul>
+            </div>
+        </div>
+    </div>
+</div>        </div>
+    </div>
+    <div class="row bb-border">
+        <div class="columns">
+            <header>
+                				<div class="row bb-area-header opensearchserver.ignore">
+				    <div class="columns">			      
+					<div class="row">
+					                                    <div class="small-12 columns" id="bb-absenderkennung">
+                                    <a href="https://geobasis-bb.de"
+                                       title="Landesvermessung und Geobasisinformation Brandenburg">
+					  LGB (Landesvermessung und Geobasisinformation Brandenburg)                                     </a>
+                                </div>					</div>
+					<div class="row">
+					                                    <div class="columns" id="bb-logo-bar">
+                                    <div class="row">
+                                        <div class="small-12 medium-6 columns bb-logo" style="width: auto;height:auto;max-height: 110px;">
+                                            <a href="https://www.brandenburg.de" title=" Link zur externen Seite: https://www.brandenburg.de">
+                                                <img id="bb-wort-bild-marke" src="https://style.brandenburg.de/2_2/img/logos/Wort_Bildmarke.svg"
+                                                     alt="Link zum Landesportal Brandenburg">
+
+                                            </a>
+                                        </div>
+                                    <div class="hide-for-small-only medium-2 columns bb-logo">&nbsp;</div>
+                                        <div class="xxxhide-for-small-only medium-4 columns bb-logo text-right" style="width: auto;">
+                                            
+<a href="/lgb/de/" title="zur Startseite der LGB"><img class="theme-logo" src="/sixcms/media.php/9/Logo-Geokompetenz-grau-2-1_n.png" title="zur Startseite der LGB" alt="zur Startseite der LGB"></a>                                        </div>
+                                    </div>
+                                </div>					</div>
+					<div class="row">
+					    <div class="large-12 columns" id="bb-nav">
+						<div class="large-9 large-push-3 columns" id="bb-nav2">
+						    		    <div class="title-bar bb-title-bar" data-responsive-toggle="bb-nav-menu"
+                                             data-hide-for="medium">
+                                            <span for="bb-navbar-button" class="bb-navbar-button-bg" data-toggle>
+                                                <button id="bb-navbar-button" class="menu-icon bb-menu-icon" type="button" aria-label="Hauptmenü"></button>
+                                            </span>
+                                            <div class="title-bar-title bb-title-bar-title" data-toggle>
+                                                Hauptmenü                                            </div>
+                                        </div> 
+                                        <div class="top-bar bb-top-nav-bar" id="bb-nav-menu">
+                                            <div class="top-bar-right">
+                                               <nav id="mainnavigation" aria-label="Hauptmenü">
+                                                   <ul class="menu bb-root-menu" data-responsive-menu="dropdown">
+                                                    <!-- Desktop Menu Items -->
+                                                    <li id="mainstart" style="position:relative;">
+                                                            <a data-linkhref="https://geobasis-bb.de/lgb/de/" tabindex="0" href="https://geobasis-bb.de/lgb/de/"
+                                                               class="bb-nav-menu-item">
+                                                               Startseite                                                            </a>
+                                                    </li>
+						    
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/"                                                                                                                        class="bb-nav-menu-item">Geodaten</a>
+                                                        <ul class="submenu menu vertical bb-submenu" data-submenu>
+                                                                  
+                                                                  <li class="show-for-small-only" data-linkhref="/lgb/de/geodaten/" >
+                                                                  <a tabindex="0" href="/lgb/de/geodaten/"
+                                                                      class="bb-nav-menu-item"><strong>Geodaten</strong></a>
+                                                                  </li>
+                                                              
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/portale-anwendungen/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/portale-anwendungen/"                                                                                                                        class="dropdown-items bb-dropdown-items">Portale & Anwendungen</a>
+                                                        <ul class="submenu menu vertical bb-submenu" data-submenu>
+                                                                  
+                                                                  <li class="show-for-small-only" data-linkhref="/lgb/de/geodaten/portale-anwendungen/" >
+                                                                  <a tabindex="0" href="/lgb/de/geodaten/portale-anwendungen/"
+                                                                      class="dropdown-items bb-dropdown-items"><strong>Portale & Anwendungen</strong></a>
+                                                                  </li>
+                                                              
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/portale-anwendungen/brandenburgviewer/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/portale-anwendungen/brandenburgviewer/"                                                                                                                        class="dropdown-items bb-dropdown-items">BRANDENBURGVIEWER</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/portale-anwendungen/geobroker/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/portale-anwendungen/geobroker/"                                                                                                                        class="dropdown-items bb-dropdown-items">GEOBROKER</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/portale-anwendungen/geoportal-brandenburg/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/portale-anwendungen/geoportal-brandenburg/"                                                                                                                        class="dropdown-items bb-dropdown-items">GEOPORTAL Brandenburg</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/portale-anwendungen/dakapo/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/portale-anwendungen/dakapo/"                                                                                                                        class="dropdown-items bb-dropdown-items">DAKAPO</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="https://geobasis-bb.de/lgb/de/geodaten/grundstuecksmarkt/bodenrichtwert-portal/">
+                                                        <a tabindex="0" href="https://geobasis-bb.de/lgb/de/geodaten/grundstuecksmarkt/bodenrichtwert-portal/"                                                                                                                        class="dropdown-items bb-dropdown-items">Bodenrichtwert-Portal</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="https://geobasis-bb.de/lgb/de/geodaten/liegenschaftskataster/liegenschaftskataster-online/">
+                                                        <a tabindex="0" href="https://geobasis-bb.de/lgb/de/geodaten/liegenschaftskataster/liegenschaftskataster-online/"                                                                                                                        class="dropdown-items bb-dropdown-items">Liegenschaftskataster-Online</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/portale-anwendungen/geomaerker/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/portale-anwendungen/geomaerker/"                                                                                                                        class="dropdown-items bb-dropdown-items">GEOMAERKER</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/portale-anwendungen/aktualitaetenviewer/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/portale-anwendungen/aktualitaetenviewer/"                                                                                                                        class="dropdown-items bb-dropdown-items">AKTUALITÄTENVIEWER</a>
+                                                                                                            </li>
+</ul>                                                    </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/3d-produkte/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/3d-produkte/"                                                                                                                        class="dropdown-items bb-dropdown-items">3D-Produkte</a>
+                                                        <ul class="submenu menu vertical bb-submenu" data-submenu>
+                                                                  
+                                                                  <li class="show-for-small-only" data-linkhref="/lgb/de/geodaten/3d-produkte/" >
+                                                                  <a tabindex="0" href="/lgb/de/geodaten/3d-produkte/"
+                                                                      class="dropdown-items bb-dropdown-items"><strong>3D-Produkte</strong></a>
+                                                                  </li>
+                                                              
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/3d-produkte/3d-gebaeudemodelle/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/3d-produkte/3d-gebaeudemodelle/"                                                                                                                        class="dropdown-items bb-dropdown-items">3D-Gebäudemodelle</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/3d-produkte/gelaendemodell/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/3d-produkte/gelaendemodell/"                                                                                                                        class="dropdown-items bb-dropdown-items">Geländemodell</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/3d-produkte/laserscandaten/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/3d-produkte/laserscandaten/"                                                                                                                        class="dropdown-items bb-dropdown-items">Laserscandaten</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/3d-produkte/oberflaechenmodell/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/3d-produkte/oberflaechenmodell/"                                                                                                                        class="dropdown-items bb-dropdown-items">Oberflächenmodell</a>
+                                                                                                            </li>
+</ul>                                                    </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/luftbilder/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/luftbilder/"                                                                                                                        class="dropdown-items bb-dropdown-items">Luftbilder</a>
+                                                        <ul class="submenu menu vertical bb-submenu" data-submenu>
+                                                                  
+                                                                  <li class="show-for-small-only" data-linkhref="/lgb/de/geodaten/luftbilder/" >
+                                                                  <a tabindex="0" href="/lgb/de/geodaten/luftbilder/"
+                                                                      class="dropdown-items bb-dropdown-items"><strong>Luftbilder</strong></a>
+                                                                  </li>
+                                                              
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/luftbilder/luftbilder-aktuell/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/luftbilder/luftbilder-aktuell/"                                                                                                                        class="dropdown-items bb-dropdown-items">Luftbilder aktuell</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/luftbilder/luftbilder-historisch/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/luftbilder/luftbilder-historisch/"                                                                                                                        class="dropdown-items bb-dropdown-items">Luftbilder historisch</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/luftbilder/satellitenbilder-sentinel-2/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/luftbilder/satellitenbilder-sentinel-2/"                                                                                                                        class="dropdown-items bb-dropdown-items">Satellitenbilder (Sentinel-2)</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/luftbilder/35-jahre-landesbefliegung/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/luftbilder/35-jahre-landesbefliegung/"                                                                                                                        class="dropdown-items bb-dropdown-items">35 Jahre Landesbefliegung</a>
+                                                                                                            </li>
+</ul>                                                    </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/liegenschaftskataster/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/liegenschaftskataster/"                                                                                                                        class="dropdown-items bb-dropdown-items">Liegenschaftskataster</a>
+                                                        <ul class="submenu menu vertical bb-submenu" data-submenu>
+                                                                  
+                                                                  <li class="show-for-small-only" data-linkhref="/lgb/de/geodaten/liegenschaftskataster/" >
+                                                                  <a tabindex="0" href="/lgb/de/geodaten/liegenschaftskataster/"
+                                                                      class="dropdown-items bb-dropdown-items"><strong>Liegenschaftskataster</strong></a>
+                                                                  </li>
+                                                              
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/portale-anwendungen/dakapo/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/portale-anwendungen/dakapo/"                                                                                                                        class="dropdown-items bb-dropdown-items">DAKAPO</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/liegenschaftskataster/alkis/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/liegenschaftskataster/alkis/"                                                                                                                        class="dropdown-items bb-dropdown-items">ALKIS</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/liegenschaftskataster/alkis-fachinformationen/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/liegenschaftskataster/alkis-fachinformationen/"                                                                                                                        class="dropdown-items bb-dropdown-items">ALKIS Fachinformationen</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/liegenschaftskataster/liegenschaftskataster-auszug/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/liegenschaftskataster/liegenschaftskataster-auszug/"                                                                                                                        class="dropdown-items bb-dropdown-items">Liegenschaftskataster Auszug</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/liegenschaftskataster/liegenschaftskataster-online/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/liegenschaftskataster/liegenschaftskataster-online/"                                                                                                                        class="dropdown-items bb-dropdown-items">Liegenschaftskataster-Online</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/liegenschaftskataster/hausumringe/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/liegenschaftskataster/hausumringe/"                                                                                                                        class="dropdown-items bb-dropdown-items">Hausumringe</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/liegenschaftskataster/georeferenzierte-adresse/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/liegenschaftskataster/georeferenzierte-adresse/"                                                                                                                        class="dropdown-items bb-dropdown-items">Georeferenzierte Adresse</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/liegenschaftskataster/luftbildliegenschaftskarte/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/liegenschaftskataster/luftbildliegenschaftskarte/"                                                                                                                        class="dropdown-items bb-dropdown-items">Luftbildliegenschaftskarte</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/liegenschaftskataster/fluruebersichtskarte/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/liegenschaftskataster/fluruebersichtskarte/"                                                                                                                        class="dropdown-items bb-dropdown-items">Flurübersichtskarte</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/liegenschaftskataster/strassennamen-regionaldaten/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/liegenschaftskataster/strassennamen-regionaldaten/"                                                                                                                        class="dropdown-items bb-dropdown-items">Straßennamen & Regionaldaten</a>
+                                                                                                            </li>
+</ul>                                                    </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/grundstuecksmarkt/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/grundstuecksmarkt/"                                                                                                                        class="dropdown-items bb-dropdown-items">Grundstücksmarkt</a>
+                                                        <ul class="submenu menu vertical bb-submenu" data-submenu>
+                                                                  
+                                                                  <li class="show-for-small-only" data-linkhref="/lgb/de/geodaten/grundstuecksmarkt/" >
+                                                                  <a tabindex="0" href="/lgb/de/geodaten/grundstuecksmarkt/"
+                                                                      class="dropdown-items bb-dropdown-items"><strong>Grundstücksmarkt</strong></a>
+                                                                  </li>
+                                                              
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/grundstuecksmarkt/grundstuecksmarktbericht/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/grundstuecksmarkt/grundstuecksmarktbericht/"                                                                                                                        class="dropdown-items bb-dropdown-items">Grundstücksmarktbericht</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/grundstuecksmarkt/bodenrichtwert-portal/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/grundstuecksmarkt/bodenrichtwert-portal/"                                                                                                                        class="dropdown-items bb-dropdown-items">Bodenrichtwert-Portal</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/grundstuecksmarkt/bodenrichtwerte/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/grundstuecksmarkt/bodenrichtwerte/"                                                                                                                        class="dropdown-items bb-dropdown-items">Bodenrichtwerte</a>
+                                                                                                            </li>
+</ul>                                                    </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/topographische-karten/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/topographische-karten/"                                                                                                                        class="dropdown-items bb-dropdown-items">Topographische Karten</a>
+                                                        <ul class="submenu menu vertical bb-submenu" data-submenu>
+                                                                  
+                                                                  <li class="show-for-small-only" data-linkhref="/lgb/de/geodaten/topographische-karten/" >
+                                                                  <a tabindex="0" href="/lgb/de/geodaten/topographische-karten/"
+                                                                      class="dropdown-items bb-dropdown-items"><strong>Topographische Karten</strong></a>
+                                                                  </li>
+                                                              
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/topographische-karten/top-karten-1-10-000/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/topographische-karten/top-karten-1-10-000/"                                                                                                                        class="dropdown-items bb-dropdown-items">Top. Karten 1 : 10.000</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/topographische-karten/top-karten-1-25-000/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/topographische-karten/top-karten-1-25-000/"                                                                                                                        class="dropdown-items bb-dropdown-items">Top. Karten 1 : 25.000</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/topographische-karten/top-karten-1-50-000/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/topographische-karten/top-karten-1-50-000/"                                                                                                                        class="dropdown-items bb-dropdown-items">Top. Karten 1 : 50.000</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/topographische-karten/top-karten-1-100-000/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/topographische-karten/top-karten-1-100-000/"                                                                                                                        class="dropdown-items bb-dropdown-items">Top. Karten 1 : 100.000</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/topographische-karten/top-regionalkarte-1-100000/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/topographische-karten/top-regionalkarte-1-100000/"                                                                                                                        class="dropdown-items bb-dropdown-items">Top. Regionalkarte 1 : 100.000</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/topographische-karten/wandkarte-1-175-000/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/topographische-karten/wandkarte-1-175-000/"                                                                                                                        class="dropdown-items bb-dropdown-items">Wandkarte 1 : 175.000</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/topographische-karten/wandkarte-1-250-000/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/topographische-karten/wandkarte-1-250-000/"                                                                                                                        class="dropdown-items bb-dropdown-items">Wandkarte 1 : 250.000</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/topographische-karten/landeskarte-1-250000/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/topographische-karten/landeskarte-1-250000/"                                                                                                                        class="dropdown-items bb-dropdown-items">Landeskarte 1 : 250.000</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/topographische-karten/landeskarte-1-400-000/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/topographische-karten/landeskarte-1-400-000/"                                                                                                                        class="dropdown-items bb-dropdown-items">Landeskarte 1 : 400.000</a>
+                                                                                                            </li>
+</ul>                                                    </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/thematische-karten/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/thematische-karten/"                                                                                                                        class="dropdown-items bb-dropdown-items">Thematische Karten</a>
+                                                        <ul class="submenu menu vertical bb-submenu" data-submenu>
+                                                                  
+                                                                  <li class="show-for-small-only" data-linkhref="/lgb/de/geodaten/thematische-karten/" >
+                                                                  <a tabindex="0" href="/lgb/de/geodaten/thematische-karten/"
+                                                                      class="dropdown-items bb-dropdown-items"><strong>Thematische Karten</strong></a>
+                                                                  </li>
+                                                              
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/thematische-karten/geodaesie/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/thematische-karten/geodaesie/"                                                                                                                        class="dropdown-items bb-dropdown-items">Geodäsie</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/thematische-karten/relief/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/thematische-karten/relief/"                                                                                                                        class="dropdown-items bb-dropdown-items">Relief</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/thematische-karten/weitere-karten/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/thematische-karten/weitere-karten/"                                                                                                                        class="dropdown-items bb-dropdown-items">Weitere Karten</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/thematische-karten/parkplaene/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/thematische-karten/parkplaene/"                                                                                                                        class="dropdown-items bb-dropdown-items">Parkpläne</a>
+                                                                                                            </li>
+</ul>                                                    </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/historische-karten/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/historische-karten/"                                                                                                                        class="dropdown-items bb-dropdown-items">Historische Karten</a>
+                                                        <ul class="submenu menu vertical bb-submenu" data-submenu>
+                                                                  
+                                                                  <li class="show-for-small-only" data-linkhref="/lgb/de/geodaten/historische-karten/" >
+                                                                  <a tabindex="0" href="/lgb/de/geodaten/historische-karten/"
+                                                                      class="dropdown-items bb-dropdown-items"><strong>Historische Karten</strong></a>
+                                                                  </li>
+                                                              
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/historische-karten/top-karten-ab-1991/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/historische-karten/top-karten-ab-1991/"                                                                                                                        class="dropdown-items bb-dropdown-items">Top. Karten (ab 1991)</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/historische-karten/kartenwerke-der-ddr-1974-1989/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/historische-karten/kartenwerke-der-ddr-1974-1989/"                                                                                                                        class="dropdown-items bb-dropdown-items">Kartenwerke der DDR (1974-1989)</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/historische-karten/deutsches-reich-1-25-000-1901-1945/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/historische-karten/deutsches-reich-1-25-000-1901-1945/"                                                                                                                        class="dropdown-items bb-dropdown-items">Deutsches Reich 1 : 25.000 (1901-1945)</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/historische-karten/deutsches-reich-1-100-000-1901-1940/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/historische-karten/deutsches-reich-1-100-000-1901-1940/"                                                                                                                        class="dropdown-items bb-dropdown-items">Deutsches Reich 1 : 100.000 (1901-1940)</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/historische-karten/urmesstischblaetter-1-25-000-1822-1872/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/historische-karten/urmesstischblaetter-1-25-000-1822-1872/"                                                                                                                        class="dropdown-items bb-dropdown-items">Urmesstischblätter 1 : 25.000 (1822-1872)</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/historische-karten/deckersches-kartenwerk-18161819/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/historische-karten/deckersches-kartenwerk-18161819/"                                                                                                                        class="dropdown-items bb-dropdown-items">Deckersches Kartenwerk (1816/1819)</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/historische-karten/schmettausches-kartenwerk-1767-1787/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/historische-karten/schmettausches-kartenwerk-1767-1787/"                                                                                                                        class="dropdown-items bb-dropdown-items">Schmettausches Kartenwerk (1767-1787)</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/historische-karten/potsdam-umgebung-1680-1999/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/historische-karten/potsdam-umgebung-1680-1999/"                                                                                                                        class="dropdown-items bb-dropdown-items">Potsdam & Umgebung (1680-1999)</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/historische-karten/land-brandenburg-1588-1791/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/historische-karten/land-brandenburg-1588-1791/"                                                                                                                        class="dropdown-items bb-dropdown-items">Land Brandenburg (1588-1791)</a>
+                                                                                                            </li>
+</ul>                                                    </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/raumbezug-sapos/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/raumbezug-sapos/"                                                                                                                        class="dropdown-items bb-dropdown-items">Raumbezug & SAPOS</a>
+                                                        <ul class="submenu menu vertical bb-submenu" data-submenu>
+                                                                  
+                                                                  <li class="show-for-small-only" data-linkhref="/lgb/de/geodaten/raumbezug-sapos/" >
+                                                                  <a tabindex="0" href="/lgb/de/geodaten/raumbezug-sapos/"
+                                                                      class="dropdown-items bb-dropdown-items"><strong>Raumbezug & SAPOS</strong></a>
+                                                                  </li>
+                                                              
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/raumbezug-sapos/sapos-aktuelles/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/raumbezug-sapos/sapos-aktuelles/"                                                                                                                        class="dropdown-items bb-dropdown-items">SAPOS Aktuelles</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/raumbezug-sapos/sapos-anmeldeformular/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/raumbezug-sapos/sapos-anmeldeformular/"                                                                                                                        class="dropdown-items bb-dropdown-items">SAPOS Anmeldeformular</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/raumbezug-sapos/sapos-referenzstationen/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/raumbezug-sapos/sapos-referenzstationen/"                                                                                                                        class="dropdown-items bb-dropdown-items">SAPOS-Referenzstationen</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/raumbezug-sapos/sapos-heps/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/raumbezug-sapos/sapos-heps/"                                                                                                                        class="dropdown-items bb-dropdown-items">SAPOS HEPS</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/raumbezug-sapos/sapos-gpps/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/raumbezug-sapos/sapos-gpps/"                                                                                                                        class="dropdown-items bb-dropdown-items">SAPOS GPPS</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/raumbezug-sapos/sapos-gpps-pro/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/raumbezug-sapos/sapos-gpps-pro/"                                                                                                                        class="dropdown-items bb-dropdown-items">SAPOS GPPS-PrO</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/raumbezug-sapos/sapos-monitoring/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/raumbezug-sapos/sapos-monitoring/"                                                                                                                        class="dropdown-items bb-dropdown-items">SAPOS Monitoring</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/raumbezug-sapos/sapos-ionosphaere/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/raumbezug-sapos/sapos-ionosphaere/"                                                                                                                        class="dropdown-items bb-dropdown-items">SAPOS Ionosphäre</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/raumbezug-sapos/sapos-glossar/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/raumbezug-sapos/sapos-glossar/"                                                                                                                        class="dropdown-items bb-dropdown-items">SAPOS Glossar</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/raumbezug-sapos/grundnetzpunkte/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/raumbezug-sapos/grundnetzpunkte/"                                                                                                                        class="dropdown-items bb-dropdown-items">Grundnetzpunkte</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/raumbezug-sapos/lagefestpunkte/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/raumbezug-sapos/lagefestpunkte/"                                                                                                                        class="dropdown-items bb-dropdown-items">Lagefestpunkte</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/raumbezug-sapos/hoehenfestpunkte/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/raumbezug-sapos/hoehenfestpunkte/"                                                                                                                        class="dropdown-items bb-dropdown-items">Höhenfestpunkte</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/raumbezug-sapos/schwerefestpunkte/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/raumbezug-sapos/schwerefestpunkte/"                                                                                                                        class="dropdown-items bb-dropdown-items">Schwerefestpunkte</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/raumbezug-sapos/koordinatentransformation/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/raumbezug-sapos/koordinatentransformation/"                                                                                                                        class="dropdown-items bb-dropdown-items">Koordinatentransformation </a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/raumbezug-sapos/ppp-rtk-bund-laender-kooperation/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/raumbezug-sapos/ppp-rtk-bund-laender-kooperation/"                                                                                                                        class="dropdown-items bb-dropdown-items">PPP-RTK Bund-Länder-Kooperation</a>
+                                                                                                            </li>
+</ul>                                                    </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/geodienste/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/geodienste/"                                                                                                                        class="dropdown-items bb-dropdown-items">Geodienste</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/weitere-digitale-produkte/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/weitere-digitale-produkte/"                                                                                                                        class="dropdown-items bb-dropdown-items">Weitere digitale Produkte</a>
+                                                        <ul class="submenu menu vertical bb-submenu" data-submenu>
+                                                                  
+                                                                  <li class="show-for-small-only" data-linkhref="/lgb/de/geodaten/weitere-digitale-produkte/" >
+                                                                  <a tabindex="0" href="/lgb/de/geodaten/weitere-digitale-produkte/"
+                                                                      class="dropdown-items bb-dropdown-items"><strong>Weitere digitale Produkte</strong></a>
+                                                                  </li>
+                                                              
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/weitere-digitale-produkte/digitale-verwaltungsgrenzen/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/weitere-digitale-produkte/digitale-verwaltungsgrenzen/"                                                                                                                        class="dropdown-items bb-dropdown-items">Digitale Verwaltungsgrenzen</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/weitere-digitale-produkte/digitale-postleitzahlengrenzen/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/weitere-digitale-produkte/digitale-postleitzahlengrenzen/"                                                                                                                        class="dropdown-items bb-dropdown-items">Digitale Postleitzahlengrenzen</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/weitere-digitale-produkte/gemeinde--ortsteilverzeichnis/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/weitere-digitale-produkte/gemeinde--ortsteilverzeichnis/"                                                                                                                        class="dropdown-items bb-dropdown-items">Gemeinde- & Ortsteilverzeichnis</a>
+                                                                                                            </li>
+</ul>                                                    </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/landschaftsmodelle/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/landschaftsmodelle/"                                                                                                                        class="dropdown-items bb-dropdown-items">Landschaftsmodelle</a>
+                                                        <ul class="submenu menu vertical bb-submenu" data-submenu>
+                                                                  
+                                                                  <li class="show-for-small-only" data-linkhref="/lgb/de/geodaten/landschaftsmodelle/" >
+                                                                  <a tabindex="0" href="/lgb/de/geodaten/landschaftsmodelle/"
+                                                                      class="dropdown-items bb-dropdown-items"><strong>Landschaftsmodelle</strong></a>
+                                                                  </li>
+                                                              
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/landschaftsmodelle/basis-dlm/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/landschaftsmodelle/basis-dlm/"                                                                                                                        class="dropdown-items bb-dropdown-items">Basis-DLM</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/atkis-landschaftsmodelle/dlm50/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/atkis-landschaftsmodelle/dlm50/"                                                                                                                        class="dropdown-items bb-dropdown-items">DLM50</a>
+                                                                                                            </li>
+</ul>                                                    </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/publikationen-infomaterial/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/publikationen-infomaterial/"                                                                                                                        class="dropdown-items bb-dropdown-items">Publikationen & Infomaterial</a>
+                                                        <ul class="submenu menu vertical bb-submenu" data-submenu>
+                                                                  
+                                                                  <li class="show-for-small-only" data-linkhref="/lgb/de/geodaten/publikationen-infomaterial/" >
+                                                                  <a tabindex="0" href="/lgb/de/geodaten/publikationen-infomaterial/"
+                                                                      class="dropdown-items bb-dropdown-items"><strong>Publikationen & Infomaterial</strong></a>
+                                                                  </li>
+                                                              
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="https://geobasis-bb.de/lgb/de/geodaten/grundstuecksmarkt/grundstuecksmarktbericht/">
+                                                        <a tabindex="0" href="https://geobasis-bb.de/lgb/de/geodaten/grundstuecksmarkt/grundstuecksmarktbericht/"                                                                                                                        class="dropdown-items bb-dropdown-items">Grundstücksmarktbericht</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/publikationen-infomaterial/vermessung-brandenburg/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/publikationen-infomaterial/vermessung-brandenburg/"                                                                                                                        class="dropdown-items bb-dropdown-items">Vermessung Brandenburg</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/publikationen-infomaterial/geschichtliches/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/publikationen-infomaterial/geschichtliches/"                                                                                                                        class="dropdown-items bb-dropdown-items">Geschichtliches</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/publikationen-infomaterial/ausstellungsdokumentationen/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/publikationen-infomaterial/ausstellungsdokumentationen/"                                                                                                                        class="dropdown-items bb-dropdown-items">Ausstellungsdokumentationen</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/publikationen-infomaterial/broschueren-faltblaetter/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/publikationen-infomaterial/broschueren-faltblaetter/"                                                                                                                        class="dropdown-items bb-dropdown-items">Broschüren & Faltblätter</a>
+                                                                                                            </li>
+</ul>                                                    </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/geodaten/kosten-lizenzen/">
+                                                        <a tabindex="0" href="/lgb/de/geodaten/kosten-lizenzen/"                                                                                                                        class="dropdown-items bb-dropdown-items">Kosten & Lizenzen</a>
+                                                                                                            </li>
+</ul>                                                    </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/dienstleister/">
+                                                        <a tabindex="0" href="/lgb/de/dienstleister/"                                                                                                                        class="bb-nav-menu-item">Dienstleister</a>
+                                                        <ul class="submenu menu vertical bb-submenu" data-submenu>
+                                                                  
+                                                                  <li class="show-for-small-only" data-linkhref="/lgb/de/dienstleister/" >
+                                                                  <a tabindex="0" href="/lgb/de/dienstleister/"
+                                                                      class="bb-nav-menu-item"><strong>Dienstleister</strong></a>
+                                                                  </li>
+                                                              
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/dienstleister/grafik-druck/">
+                                                        <a tabindex="0" href="/lgb/de/dienstleister/grafik-druck/"                                                                                                                        class="dropdown-items bb-dropdown-items">Grafik & Druck</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/dienstleister/kartenanwendungen/">
+                                                        <a tabindex="0" href="/lgb/de/dienstleister/kartenanwendungen/"                                                                                                                        class="dropdown-items bb-dropdown-items">Kartenanwendungen</a>
+                                                        <ul class="submenu menu vertical bb-submenu" data-submenu>
+                                                                  
+                                                                  <li class="show-for-small-only" data-linkhref="/lgb/de/dienstleister/kartenanwendungen/" >
+                                                                  <a tabindex="0" href="/lgb/de/dienstleister/kartenanwendungen/"
+                                                                      class="dropdown-items bb-dropdown-items"><strong>Kartenanwendungen</strong></a>
+                                                                  </li>
+                                                              
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/dienstleister/kartenanwendungen/digitale-karten-nach-mass/">
+                                                        <a tabindex="0" href="/lgb/de/dienstleister/kartenanwendungen/digitale-karten-nach-mass/"                                                                                                                        class="dropdown-items bb-dropdown-items">Digitale Karten nach Maß </a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/dienstleister/kartenanwendungen/kartenviewer-api/">
+                                                        <a tabindex="0" href="/lgb/de/dienstleister/kartenanwendungen/kartenviewer-api/"                                                                                                                        class="dropdown-items bb-dropdown-items">Kartenviewer API</a>
+                                                                                                            </li>
+</ul>                                                    </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/dienstleister/karten-im-auftrag/">
+                                                        <a tabindex="0" href="/lgb/de/dienstleister/karten-im-auftrag/"                                                                                                                        class="dropdown-items bb-dropdown-items">Karten im Auftrag</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/dienstleister/inspire-zentrale/">
+                                                        <a tabindex="0" href="/lgb/de/dienstleister/inspire-zentrale/"                                                                                                                        class="dropdown-items bb-dropdown-items">INSPIRE-Zentrale</a>
+                                                        <ul class="submenu menu vertical bb-submenu" data-submenu>
+                                                                  
+                                                                  <li class="show-for-small-only" data-linkhref="/lgb/de/dienstleister/inspire-zentrale/" >
+                                                                  <a tabindex="0" href="/lgb/de/dienstleister/inspire-zentrale/"
+                                                                      class="dropdown-items bb-dropdown-items"><strong>INSPIRE-Zentrale</strong></a>
+                                                                  </li>
+                                                              
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/dienstleister/inspire-zentrale/leistungen/">
+                                                        <a tabindex="0" href="/lgb/de/dienstleister/inspire-zentrale/leistungen/"                                                                                                                        class="dropdown-items bb-dropdown-items">Leistungen</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/dienstleister/inspire-zentrale/partner/">
+                                                        <a tabindex="0" href="/lgb/de/dienstleister/inspire-zentrale/partner/"                                                                                                                        class="dropdown-items bb-dropdown-items">Partner</a>
+                                                                                                            </li>
+</ul>                                                    </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/dienstleister/unterstuetzung-agrarfoerderung/">
+                                                        <a tabindex="0" href="/lgb/de/dienstleister/unterstuetzung-agrarfoerderung/"                                                                                                                        class="dropdown-items bb-dropdown-items">Unterstützung Agrarförderung</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/dienstleister/georeferenzierung/">
+                                                        <a tabindex="0" href="/lgb/de/dienstleister/georeferenzierung/"                                                                                                                        class="dropdown-items bb-dropdown-items">Georeferenzierung</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/dienstleister/kontrollpunkt-navigation/">
+                                                        <a tabindex="0" href="/lgb/de/dienstleister/kontrollpunkt-navigation/"                                                                                                                        class="dropdown-items bb-dropdown-items">Kontrollpunkt Navigation</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/dienstleister/kalibrierungsstrecke/">
+                                                        <a tabindex="0" href="/lgb/de/dienstleister/kalibrierungsstrecke/"                                                                                                                        class="dropdown-items bb-dropdown-items">Kalibrierungsstrecke</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/dienstleister/prueffeld/">
+                                                        <a tabindex="0" href="/lgb/de/dienstleister/prueffeld/"                                                                                                                        class="dropdown-items bb-dropdown-items">Prüffeld</a>
+                                                                                                            </li>
+</ul>                                                    </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/karriere/">
+                                                        <a tabindex="0" href="/lgb/de/karriere/"                                                                                                                        class="bb-nav-menu-item">Karriere</a>
+                                                        <ul class="submenu menu vertical bb-submenu" data-submenu>
+                                                                  
+                                                                  <li class="show-for-small-only" data-linkhref="/lgb/de/karriere/" >
+                                                                  <a tabindex="0" href="/lgb/de/karriere/"
+                                                                      class="bb-nav-menu-item"><strong>Karriere</strong></a>
+                                                                  </li>
+                                                              
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/karriere/stellenangebote/">
+                                                        <a tabindex="0" href="/lgb/de/karriere/stellenangebote/"                                                                                                                        class="dropdown-items bb-dropdown-items">Stellenangebote</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/karriere/praktikum/">
+                                                        <a tabindex="0" href="/lgb/de/karriere/praktikum/"                                                                                                                        class="dropdown-items bb-dropdown-items">Praktikum</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/karriere/berufsausbildung/">
+                                                        <a tabindex="0" href="/lgb/de/karriere/berufsausbildung/"                                                                                                                        class="dropdown-items bb-dropdown-items">Berufsausbildung</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/karriere/duales-studium/">
+                                                        <a tabindex="0" href="/lgb/de/karriere/duales-studium/"                                                                                                                        class="dropdown-items bb-dropdown-items">Duales Studium</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/karriere/laufbahnausbildung/">
+                                                        <a tabindex="0" href="/lgb/de/karriere/laufbahnausbildung/"                                                                                                                        class="dropdown-items bb-dropdown-items">Laufbahnausbildung</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/karriere/zustaendige-stelle-73-bbig/">
+                                                        <a tabindex="0" href="/lgb/de/karriere/zustaendige-stelle-73-bbig/"                                                                                                                        class="dropdown-items bb-dropdown-items">Zuständige Stelle § 73 BBiG</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/karriere/aus--fortbildungsstaette/">
+                                                        <a tabindex="0" href="/lgb/de/karriere/aus--fortbildungsstaette/"                                                                                                                        class="dropdown-items bb-dropdown-items">Aus- & Fortbildungsstätte</a>
+                                                        <ul class="submenu menu vertical bb-submenu" data-submenu>
+                                                                  
+                                                                  <li class="show-for-small-only" data-linkhref="/lgb/de/karriere/aus--fortbildungsstaette/" >
+                                                                  <a tabindex="0" href="/lgb/de/karriere/aus--fortbildungsstaette/"
+                                                                      class="dropdown-items bb-dropdown-items"><strong>Aus- & Fortbildungsstätte</strong></a>
+                                                                  </li>
+                                                              
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/karriere/aus--fortbildungsstaette/service-fuer-alle-ausbildungsbetriebe/">
+                                                        <a tabindex="0" href="/lgb/de/karriere/aus--fortbildungsstaette/service-fuer-alle-ausbildungsbetriebe/"                                                                                                                        class="dropdown-items bb-dropdown-items">Service für alle Ausbildungsbetriebe</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/karriere/aus--fortbildungsstaette/kooperationspartner-der-zaf/">
+                                                        <a tabindex="0" href="/lgb/de/karriere/aus--fortbildungsstaette/kooperationspartner-der-zaf/"                                                                                                                        class="dropdown-items bb-dropdown-items">Kooperationspartner der ZAF</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/karriere/aus--fortbildungsstaette/lehrgangsangebot-der-zaf/">
+                                                        <a tabindex="0" href="/lgb/de/karriere/aus--fortbildungsstaette/lehrgangsangebot-der-zaf/"                                                                                                                        class="dropdown-items bb-dropdown-items">Lehrgangsangebot der ZAF</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/karriere/aus--fortbildungsstaette/arbeitsschutz-und-verhaltensregeln-in-der-zaf/">
+                                                        <a tabindex="0" href="/lgb/de/karriere/aus--fortbildungsstaette/arbeitsschutz-und-verhaltensregeln-in-der-zaf/"                                                                                                                        class="dropdown-items bb-dropdown-items">Arbeitsschutz und Verhaltensregeln in der ZAF</a>
+                                                                                                            </li>
+</ul>                                                    </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/karriere/infomaterialien/">
+                                                        <a tabindex="0" href="/lgb/de/karriere/infomaterialien/"                                                                                                                        class="dropdown-items bb-dropdown-items">Infomaterialien</a>
+                                                        <ul class="submenu menu vertical bb-submenu" data-submenu>
+                                                                  
+                                                                  <li class="show-for-small-only" data-linkhref="/lgb/de/karriere/infomaterialien/" >
+                                                                  <a tabindex="0" href="/lgb/de/karriere/infomaterialien/"
+                                                                      class="dropdown-items bb-dropdown-items"><strong>Infomaterialien</strong></a>
+                                                                  </li>
+                                                              
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/karriere/infomaterialien/videos/">
+                                                        <a tabindex="0" href="/lgb/de/karriere/infomaterialien/videos/"                                                                                                                        class="dropdown-items bb-dropdown-items">Videos</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/karriere/infomaterialien/faltblaetter-broschueren/">
+                                                        <a tabindex="0" href="/lgb/de/karriere/infomaterialien/faltblaetter-broschueren/"                                                                                                                        class="dropdown-items bb-dropdown-items">Faltblätter & Broschüren</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/karriere/infomaterialien/links/">
+                                                        <a tabindex="0" href="/lgb/de/karriere/infomaterialien/links/"                                                                                                                        class="dropdown-items bb-dropdown-items">Links</a>
+                                                                                                            </li>
+</ul>                                                    </li>
+</ul>                                                    </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="#">
+                                                        <a tabindex="0" href="#"                                                            style="cursor:default"                                                            class="bb-nav-menu-item">Aufgaben</a>
+                                                        <ul class="submenu menu vertical bb-submenu" data-submenu>
+                                                                  
+                                                              
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/aufgaben/wer-wir-sind/">
+                                                        <a tabindex="0" href="/lgb/de/aufgaben/wer-wir-sind/"                                                                                                                        class="dropdown-items bb-dropdown-items">Wer wir sind</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/aufgaben/digitalisierung/">
+                                                        <a tabindex="0" href="/lgb/de/aufgaben/digitalisierung/"                                                                                                                        class="dropdown-items bb-dropdown-items">Digitalisierung</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/aufgaben/geodateninfrastruktur/">
+                                                        <a tabindex="0" href="/lgb/de/aufgaben/geodateninfrastruktur/"                                                                                                                        class="dropdown-items bb-dropdown-items">Geodateninfrastruktur</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/aufgaben/geotopographie/">
+                                                        <a tabindex="0" href="/lgb/de/aufgaben/geotopographie/"                                                                                                                        class="dropdown-items bb-dropdown-items">Geotopographie</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/aufgaben/geodaetischer-raumbezug/">
+                                                        <a tabindex="0" href="/lgb/de/aufgaben/geodaetischer-raumbezug/"                                                                                                                        class="dropdown-items bb-dropdown-items">Geodätischer Raumbezug</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/aufgaben/fachkraeftesicherung/">
+                                                        <a tabindex="0" href="/lgb/de/aufgaben/fachkraeftesicherung/"                                                                                                                        class="dropdown-items bb-dropdown-items">Fachkräftesicherung</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/aufgaben/aufsicht-oebvi/">
+                                                        <a tabindex="0" href="/lgb/de/aufgaben/aufsicht-oebvi/"                                                                                                                        class="dropdown-items bb-dropdown-items">Aufsicht ÖbVI</a>
+                                                                                                            </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="/lgb/de/aufgaben/oberer-gutachterausschuss/">
+                                                        <a tabindex="0" href="/lgb/de/aufgaben/oberer-gutachterausschuss/"                                                                                                                        class="dropdown-items bb-dropdown-items">Oberer Gutachterausschuss</a>
+                                                                                                            </li>
+</ul>                                                    </li>
+                                                    <li style="position:relative;" class="has-submenu" data-linkhref="https://geobasis-bb.de/lgb/de/presse/">
+                                                        <a tabindex="0" href="https://geobasis-bb.de/lgb/de/presse/"                                                                                                                        class="bb-nav-menu-item">Presse</a>
+                                                                                                            </li>
+						                                                    </ul>
+                                                </nav>
+                                            </div>
+					</div>						</div>
+						<div class="bb-bottom-border">
+						</div>
+					    </div>
+					</div>
+				    </div>
+				</div>
+            </header>
+            				<div class="row bb-area-content">
+				    <div class="columns">
+					<div class="bb-content">
+					    <div class="row">
+						<div class="columns small-12 medium-7 large-9 text-justify">
+						    <div class="row">
+							<div class="columns opensearchserver.ignore">
+						    				      <div class="bb-breadcrumbs opensearchserver.ignore" id="bb-breadcrumbs1">
+					  <span title="Sie sind hier:">
+					      Sie sind hier:
+					  </span>
+					  <!--<i class="fa fa-caret-right"></i>
+
+					      <a href="https://geobasis-bb.de/lgb/de/"
+						 title="Link zur Seite: Startseite"
+						 class="bb-nav-menu-item">
+						 Startseite					      </a>-->
+					                                         
+
+                      <i class="fa fa-caret-right"></i>
+                        <a href="/lgb/de/"                        title="Link zur Seite: Startseite"
+                        >
+                        Startseite                        </a>
+                                       
+
+                      <i class="fa fa-caret-right"></i>
+                        <a href="/lgb/de/dienstleister/"                        title="Link zur Seite: Dienstleister"
+                        >
+                        Dienstleister                        </a>
+					  					  <i class="fa fa-caret-right"></i>
+					  <a
+					      title="diese Seite:  INSPIRE-Zentrale "
+					      class="bb-nav-menu-item"
+					      style="cursor: default; text-decoration: none; color: rgb(22, 22, 22);" onmouseover="this.style.color='#161616'"
+					      >
+					      INSPIRE-Zentrale 					  </a>
+				      </div>							</div>
+						    </div>
+						</div>
+						<div class="small-12 medium-3 columns">
+						    <div class="row">
+							<div class="columns opensearchserver.ignore">
+						    <div id="bb-search-bar" class="opensearchserver.ignore">
+<form name="suchformular" id="osssearchform" action=/lgb/de/suche/ method="post">
+                               <input type="hidden" name="start" id="start" value="0" />
+                <input type="hidden" name="row" id="df-entry" value="20" />
+                <input type="hidden" name="index" id="ossindex" value=geobasis-bb.de /> 
+   <div class="input-group">
+      <label for="osssearchbox" class="hide">Suche</label>
+      <input type="text" class="input-group-field bb-input-group-field"
+            placeholder="Suchbegriffe"
+            title="Suchbegriffe"
+            name="phrase"
+            id="osssearchbox"
+            value=""
+            autocomplete="on" 
+            aria-label="Suche" />
+        <div class="input-group-button">
+            <button id="search" class="button bb-searchbutton" name="Suche in allen Inhalten" type="submit" 
+                    title="Suche in allen Inhalten">
+                                <span class="show-for-sr">Suche in allen Inhalten</span>
+                                <i class="fa fa-search fa-lg"></i>
+            </button>
+        </div>
+    </div>
+</form>
+</div><!-- // #bb-search-bar -->							</div>
+						    </div>
+						</div>
+					    </div>
+					    <main id="maincontent">
+					    <div id="inhalt" class="row" data-mais-site-id="mais2red.c.36703.de">
+                        						
+                            <section><div class="small-12 columns" data-mais-basic-content-id="mais2red.c.43577.de">
+                            
+                            
+                            
+                            <!-- m2_tpl_frnt_maincntnt_prgrphs -->
+							 	<!-- 65444 |  -->
+							  <h1>INSPIRE-Zentrale</h1>							  <div class="row"><div class="columns bb-text-justify-xx trennung">
+							                                           <section class="show-for-small-only">
+                                
+                                    	<!-- m2_tpl_frnt_maincntnt_grids_texte_paragraphs_choice_pic_center -->
+	 <figure class="thumbnail bb-thumbnail">
+            <div class="figure_wrapper"><a class="bb-image-lupe" href="#" title="Bild vergrößern" data-featherlight="/sixcms/media.php/9/INSPIRE-Nelos-Fotolia.jpg">                 <div>
+                    <img
+                            alt="Startbild Logo INSPIRE"
+                            title="Startbild INSPIRE"
+                            data-caption="&copy Nelos / Fotolia <br/><small style='float: right; margin: 10px 30px 0 0;'>Zum Schließen die ESC-Taste drücken</small>"                    style="
+                                        "
+                            class="bb-image bb-image-centered"
+                            src="/sixcms/media.php/9/INSPIRE-Nelos-Fotolia.jpg"
+
+                            data-alt="Startbild Logo INSPIRE"                    >
+                 </div>
+		
+                <div class="figure__hover-layer">
+                        <p class="bb-image-caption">Bild vergrößern<i title="Bild vergrößern" class="bb-icon-text fa fa-search fa-lg"></i></p>		  
+                   </div></a></div>             <figcaption>
+                                <small>&copy Nelos / Fotolia </small>            </figcaption>
+        </figure>
+                                                                        </section>
+                                                                                                          <div class="bb-media-object">
+                                
+                                
+                                <div class="top bb-textpic-center bb-text-justify-xx">
+                                
+                                
+                                
+                                                <figure class="thumbnail bb-thumbnail hide-for-small-only">
+                                    
+                                          <div>
+                                              <img
+                                          alt="Startbild Logo INSPIRE"
+                                          title="Startbild INSPIRE"
+                                          data-caption="Startbild INSPIRE <br/><small style='float: right; margin: 10px 30px 0 0;'>Zum Schließen die ESC-Taste drücken</small>"
+                                          style=""
+                                          class="bb-image bb-image-centered"
+                                          
+                                          src="/sixcms/media.php/9/INSPIRE-Nelos-Fotolia.jpg"
+                                          
+                                              >
+                                          </div>
+                                          
+                                          <figcaption>
+                                              
+                                              <small>&copy Nelos / Fotolia </small>
+                                          </figcaption>
+                                    
+                                    </figure>
+                                            </div>
+                                                                            <div class="bb-text-justify-xx">
+                                    <h2 style="text-align: center;"></h2>                                </div>
+                            </div>
+                                                        <hr>                                                        </div></div>
+
+
+                            <div class="row">
+
+<div class="row"><div class="columns bb-text-justify-xx trennung">
+        <div class="columns text-justify-xx  opensearchserver.ignore" data-mais-paragraph-id="mais2red.c.71287.de">
+
+
+							    <!-- 65448 | 05.04.2019 |  -->
+							    <!-- | texte | paragraphs | m2_tpl_frnt_maincntnt_grids_texte_paragraphs -->
+							   							    
+<div style="clear:both;"></div>
+<section class="show-for-small-only ">
+
+<div style="clear:both;"><p>Um eine europaweit einheitliche Geodateninfrastruktur (GDI) zu schaffen hat die europ&auml;ische Kommission im Jahr 2007 eine Gesetzesinitiative formuliert mit dem Titel <em>Infrastructure for Spatial Information in the European Community</em> &ndash; kurz INSPIRE. Die INSPIRE-Zentrale ist f&uuml;r die organisatorische und technische Umsetzung der INSPIRE-Richtlinie in der LGB verantwortlich. Die Dienstleistungen richten sich nach den Vorgaben von INSPIRE und umfassen u.a. die fachliche und technische Vereinheitlichung von Geodaten sowie deren Bereitstellung &uuml;ber Web-Dienste. Ziel der INSPIRE-Richtlinie ist es, die grenz&uuml;bergreifende Nutzung von Geodaten in Europa zu erleichtern.</p>
+<p><strong>Beispiel zur INSPIRE-Umsetzung<br /></strong><br />Ein Beispiel f&uuml;r INSPIRE betroffene Daten sind Postadressen, die mit einem Punkt (Adresse) verortet werden. Diese Adressdaten werden in jedem Mitgliedstaat der EU unterschiedlich vorgehalten:</p>
+<pre>   _____________________________________________________________________________________________________
+
+   Sweden            | Denmark            | Spain                  |  Czech Republic    | Germany
+   ______________________________________________________________________________________________________
+
+
+   Mainstreet 6 1101 | Mainstreet 6 1 TV  | Mainstreet 6 left 1 1  |  Mainstreet 360/6  | Mainstreet 6
+   12345 Farsta      | 2400 K&oslash;benhavn NV  | Cortijo del Marqu&eacute;s    |  Chodov            | 67433 Kelkheim
+                     |                    | 41037 &Eacute;cija (Sevilla)  |  149 00 Prague 41  |
+   ______________________________________________________________________________________________________
+
+</pre>
+<p>Mit dem Ziel der Vereinheitlichung dieser Adressinformationen stellt INSPIRE ein Datenmodell bereit, in das die Adressdaten der europ&auml;ischen Mitgliedsstaaten &uuml;berf&uuml;hrt werden. Mithilfe des INSPIRE-Datenmodells werden die Struktur und die Inhalte von Adressdaten in der gesamten EU vereinheitlicht.<br /><br />Der Vorteil? Grenz&uuml;bergreifende, internationale Projekte werden auf Grundlage dieser einheitlichen Geodateninfrastruktur erm&ouml;glicht und vereinfacht. Bspw. k&ouml;nnte ein Lieferservice in der Grenzregion Brandenburg zu Polen auf eine identische Struktur von Adressdaten zugreifen, um ein einheitliches IT-Managementsystem aufzubauen.</p>
+<p></p>
+<p></p></div></section>
+<div class="  show-for-medium">
+<div class="bb-text-justify-xx">
+    <p>Um eine europaweit einheitliche Geodateninfrastruktur (GDI) zu schaffen hat die europ&auml;ische Kommission im Jahr 2007 eine Gesetzesinitiative formuliert mit dem Titel <em>Infrastructure for Spatial Information in the European Community</em> &ndash; kurz INSPIRE. Die INSPIRE-Zentrale ist f&uuml;r die organisatorische und technische Umsetzung der INSPIRE-Richtlinie in der LGB verantwortlich. Die Dienstleistungen richten sich nach den Vorgaben von INSPIRE und umfassen u.a. die fachliche und technische Vereinheitlichung von Geodaten sowie deren Bereitstellung &uuml;ber Web-Dienste. Ziel der INSPIRE-Richtlinie ist es, die grenz&uuml;bergreifende Nutzung von Geodaten in Europa zu erleichtern.</p>
+<p><strong>Beispiel zur INSPIRE-Umsetzung<br /></strong><br />Ein Beispiel f&uuml;r INSPIRE betroffene Daten sind Postadressen, die mit einem Punkt (Adresse) verortet werden. Diese Adressdaten werden in jedem Mitgliedstaat der EU unterschiedlich vorgehalten:</p>
+<pre>   _____________________________________________________________________________________________________
+
+   Sweden            | Denmark            | Spain                  |  Czech Republic    | Germany
+   ______________________________________________________________________________________________________
+
+
+   Mainstreet 6 1101 | Mainstreet 6 1 TV  | Mainstreet 6 left 1 1  |  Mainstreet 360/6  | Mainstreet 6
+   12345 Farsta      | 2400 K&oslash;benhavn NV  | Cortijo del Marqu&eacute;s    |  Chodov            | 67433 Kelkheim
+                     |                    | 41037 &Eacute;cija (Sevilla)  |  149 00 Prague 41  |
+   ______________________________________________________________________________________________________
+
+</pre>
+<p>Mit dem Ziel der Vereinheitlichung dieser Adressinformationen stellt INSPIRE ein Datenmodell bereit, in das die Adressdaten der europ&auml;ischen Mitgliedsstaaten &uuml;berf&uuml;hrt werden. Mithilfe des INSPIRE-Datenmodells werden die Struktur und die Inhalte von Adressdaten in der gesamten EU vereinheitlicht.<br /><br />Der Vorteil? Grenz&uuml;bergreifende, internationale Projekte werden auf Grundlage dieser einheitlichen Geodateninfrastruktur erm&ouml;glicht und vereinfacht. Bspw. k&ouml;nnte ein Lieferservice in der Grenzregion Brandenburg zu Polen auf eine identische Struktur von Adressdaten zugreifen, um ein einheitliches IT-Managementsystem aufzubauen.</p>
+<p></p>
+<p></p></div>
+</div>
+
+<div style="clear:both;"></div>
+
+							    <!-- 247252 | 22.01.2021 |  -->
+							    <!-- | dynamictext | iconlist | m2_tpl_frnt_maincntnt_grids_dynamictext_iconlist -->
+							   							        <ul class="bb-list-icon m2-list-icon ">
+<!-- | externer | m2_tpl_frnt_maincntnt_grids_dynamictext_iconlist_externer -->
+    
+
+<li class="m2-fa"><a class="m2-fa m2-link-extern" href="https://inspire.ec.europa.eu/schemas/ad/4.0/Addresses.xsd" onclick="" title="öffnet Seite: https://inspire.ec.europa.eu/schemas/ad/4.0/Addresses.xsd">Datenmodell Addresses.xsd</a> </li>    </ul></div>
+    
+
+</div></div>
+<div class="row"><div class="columns bb-text-justify-xx trennung">
+        <div class="columns text-justify-xx " data-mais-paragraph-id="mais2red.c.71300.de">
+
+
+							    <!-- 65452 | 05.04.2019 |  -->
+							    <!-- | struktur | accordion | m2_tpl_frnt_maincntnt_grids_struktur_accordion -->
+							   							    <h2 class="">mehr erfahren...</h2><div class="row bb-accordion-component " id="65452">
+    <div class="columns bb-bottom-space">
+            <details title="Rechtlicher Rahmen" id="mais2redc351239de" >
+            <summary class="bb-summary-border-first">
+                
+                <h3 class="bb-h6-bold bb-summary-headline">Rechtlicher Rahmen</h3>
+                            </summary>
+            <div class="bb-summary-content">
+                
+<!-- EMBED: m2_tpl_frnt_maincntnt_grids_texte_paragraphs | 247310 -->
+
+<div style="clear:both;"></div>
+<section class="show-for-small-only ">
+
+<div style="clear:both;"><p>Rechtsgrundlage ist das Brandenburgische Geodateninfrastrukturgesetz (BbgGDIG) vom 13. April 2010. Demnach ist das Land Brandenburg verpflichtet eine Geodateninfrastruktur gem&auml;&szlig; INSPIRE aufzubauen und zu pflegen. Der Minister des Innern koordiniert den Aufbau der INSPIRE-Infrastruktur f&uuml;r Brandenburg und setzt die Erf&uuml;llung des INSPIRE-Zeitplans durch. Die Richtlinie 2007/2/EG benennt in den Anh&auml;ngen I, II und III insgesamt 34 Datenthemen, zu denen digitale Daten nach einheitlichen Spezifikationen der EU verf&uuml;gbar gemacht werden m&uuml;ssen. Die INSPIRE-Zentrale setzt diese gesetzliche Vorgabe f&uuml;r geodatenhaltende Landesbeh&ouml;rden, Landesbetriebe und Einrichtungen im Land Brandenburg um.</p>
+<ul class="bb-list-ul">
+<li><a href="https://geoportal.brandenburg.de/de/cms/portal/gdi-brandenburg/rahmenbedingungen" target="_blank" rel="noopener noreferrer" title="Rahmenbedingungen">Rahmenbedingungen</a></li>
+</ul></div></section>
+<div class="  show-for-medium">
+<div class="bb-text-justify-xx">
+    <p>Rechtsgrundlage ist das Brandenburgische Geodateninfrastrukturgesetz (BbgGDIG) vom 13. April 2010. Demnach ist das Land Brandenburg verpflichtet eine Geodateninfrastruktur gem&auml;&szlig; INSPIRE aufzubauen und zu pflegen. Der Minister des Innern koordiniert den Aufbau der INSPIRE-Infrastruktur f&uuml;r Brandenburg und setzt die Erf&uuml;llung des INSPIRE-Zeitplans durch. Die Richtlinie 2007/2/EG benennt in den Anh&auml;ngen I, II und III insgesamt 34 Datenthemen, zu denen digitale Daten nach einheitlichen Spezifikationen der EU verf&uuml;gbar gemacht werden m&uuml;ssen. Die INSPIRE-Zentrale setzt diese gesetzliche Vorgabe f&uuml;r geodatenhaltende Landesbeh&ouml;rden, Landesbetriebe und Einrichtungen im Land Brandenburg um.</p>
+<ul class="bb-list-ul">
+<li><a href="https://geoportal.brandenburg.de/de/cms/portal/gdi-brandenburg/rahmenbedingungen" target="_blank" rel="noopener noreferrer" title="Rahmenbedingungen">Rahmenbedingungen</a></li>
+</ul></div>
+</div>
+
+<div style="clear:both;"></div>            <div style="clear:both;width:100%"></div>
+          </div>
+        </details>
+            <details title="Kontakt" id="mais2redc359072de" >
+            <summary class="bb-summary-border">
+                
+                <h3 class="bb-h6-bold bb-summary-headline">Kontakt</h3>
+                            </summary>
+            <div class="bb-summary-content">
+                
+<!-- EMBED: m2_tpl_frnt_maincntnt_grids_dynamictext_iconlist | 247316 -->
+    <ul class="bb-list-icon m2-list-icon ">
+<!-- | internlinkblock | m2_tpl_frnt_maincntnt_grids_dynamictext_iconlist_internlinkblock -->
+    
+
+<li class="m2-fa"><a 
+        href="/lgb/de/kontakt/"
+        title="Link zur Seite: Kontakt "
+        >Kontakt zum Kundenservice der LGB</a> </li><!-- | externer | m2_tpl_frnt_maincntnt_grids_dynamictext_iconlist_externer -->
+    
+
+<li class="m2-fa"><a class="m2-fa m2-link-extern" href="https://geoportal.brandenburg.de/de/cms/portal/service/kontakt" onclick="" title="öffnet Seite: Kontakt zur INSPIRE-Zentrale">Kontakt zur INSPIRE-Zentrale</a> </li>    </ul>            <div style="clear:both;width:100%"></div>
+          </div>
+        </details>
+            <details title="Leistungen der INSPIRE-Zentrale" id="mais2redc370233de" >
+            <summary class="bb-summary-border">
+                
+                <h3 class="bb-h6-bold bb-summary-headline">Leistungen der INSPIRE-Zentrale</h3>
+                            </summary>
+            <div class="bb-summary-content">
+                
+<!-- EMBED: m2_tpl_frnt_maincntnt_grids_dynamictext_iconlist | 255537 -->
+    <ul class="bb-list-icon m2-list-icon ">
+<!-- | internlinkblock | m2_tpl_frnt_maincntnt_grids_dynamictext_iconlist_internlinkblock -->
+    
+
+<li class="m2-fa"><a 
+        href="/lgb/de/dienstleister/inspire-zentrale/leistungen/"
+        title="Link zur Seite: Leistungen  &ndash; Dienstleistungen der INSPIRE-Zentrale – "Eine für Alles""
+        >Dienstleistungen der INSPIRE-Zentrale – „Eine für Alles“</a> </li>    </ul>            <div style="clear:both;width:100%"></div>
+          </div>
+        </details>
+            <details title="Partner der INSPIRE-Zentrale" id="mais2redc370236de" >
+            <summary class="bb-summary-border">
+                
+                <h3 class="bb-h6-bold bb-summary-headline">Partner der INSPIRE-Zentrale</h3>
+                            </summary>
+            <div class="bb-summary-content">
+                
+<!-- EMBED: m2_tpl_frnt_maincntnt_grids_dynamictext_iconlist | 255541 -->
+    <ul class="bb-list-icon m2-list-icon ">
+<!-- | internlinkblock | m2_tpl_frnt_maincntnt_grids_dynamictext_iconlist_internlinkblock -->
+    
+
+<li class="m2-fa"><a 
+        href="/lgb/de/dienstleister/inspire-zentrale/partner/"
+        title="Link zur Seite: Partner  &ndash; Vertragspartner der INSPIRE-Zentrale"
+        >Vertragspartner der INSPIRE-Zentrale</a> </li>    </ul>            <div style="clear:both;width:100%"></div>
+          </div>
+        </details>
+    </div>
+</div></div>
+    
+
+</div></div>
+<div class="row"><div class="columns bb-text-justify-xx trennung">
+        
+    
+
+</div></div>
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+						                            						    <div class="row">
+							<div class="columns">
+
+
+
+                                							    <a href="javascript:window.print()" class="button bb-submit-button opensearchserver.ignore"
+							       title="Seite drucken">
+								<i class="fa fa-print"></i> Seite drucken							    </a>
+							</div>
+						    </div>
+                                                </div>
+
+                    </section>
+                                            					    </div>
+                                            </main>
+					</div>
+				    </div>
+				</div>
+
+
+					      
+
+
+        </div>
+    </div>
+    <footer id="footernavigation">
+
+        <div class="row bb-area-footer opensearchserver.ignore">
+            <div class="columns">
+                		    <div class="row bb-area-footer-content">
+                        <div class="large-12 columns">			    
+			    <div class="bb-breadcrumbs" id="bb-breadcrumbs2">
+                                <span title="Sie sind hier:">
+                                    Sie sind hier:
+                                </span>
+				    <!-- <i class="fa fa-caret-right"></i>
+				    <a href="https://geobasis-bb.de/lgb/de/"
+				       title="Link zur Seite: Startseite"
+				       class="bb-nav-menu-item">
+				       Startseite				    </a> -->
+				                                           
+
+                      <i class="fa fa-caret-right"></i>
+                        <a href="/lgb/de/"                        title="Link zur Seite: Startseite"
+                        >
+                        Startseite                        </a>
+                                       
+
+                      <i class="fa fa-caret-right"></i>
+                        <a href="/lgb/de/dienstleister/"                        title="Link zur Seite: Dienstleister"
+                        >
+                        Dienstleister                        </a>
+				    <i class="fa fa-caret-up"></i>
+				    <a href="#totop" 
+					title="zum Seitenanfang von: INSPIRE-Zentrale ">
+					INSPIRE-Zentrale 				    </a>
+                            </div>
+                        </div>
+                    </div>                <div class="row bb-area-footer-content">
+
+
+                    <div class="medium-12 large-9 columns">
+                        <div id="bb-info-bar">
+                            <div class="row">
+                                <h2 class="bb-sr">Info-Links</h2>
+                                <div class="columns small-12 medium-6 large-6">
+                                    
+				    <h3 class="bb-h6 italic">Häufig nachgefragt</h3>
+				    <ul class="bb-list-dark m2-list-dark-icon">
+					
+<!-- m2_temp_front_44_3_masterlinks_items_internlinkblock -->
+            <li class="m2-fa">
+   <a href="https://geobasis-bb.de/lgb/de/presse/"      title="öffnet Seite: Presse"
+      > 
+       Presse- & Öffentlichkeitsarbeit</a> </li>
+<!-- m2_temp_front_44_3_masterlinks_items_downloadlink -->
+      <li class="m2-fa"><a class="m2-fa m2-link-media" 
+                     href="/sixcms/media.php/9/Organigramm.pdf" 
+                     title="öffnet PDF-Datei: Organigramm (33.6&nbsp;KB)"
+                     >Organigramm</a> </li>      
+<!-- m2_temp_front_44_3_masterlinks_items_internlinkblock -->
+            <li class="m2-fa">
+   <a href="/lgb/de/agnb/"      title="öffnet Seite: AGNB Allgemeine Geschäfts- und Nutzungsbedingungen"
+      > 
+       AGNB</a> </li>
+<!-- m2_temp_front_44_3_masterlinks_items_internlinkblock -->
+            <li class="m2-fa">
+   <a href="/lgb/de/geodaten/kosten-lizenzen/"      title="öffnet Seite: Kosten & Lizenzen"
+      > 
+       Kosten & Lizenzen</a> </li>
+<!-- m2_temp_front_44_3_masterlinks_items_internlinkblock -->
+            <li class="m2-fa">
+   <a href="/lgb/de/geodaten/open-data/"      title="Link zu Open Data"
+      > 
+       Open Data</a> </li>
+<!-- m2_temp_front_44_3_masterlinks_items_internlinkblock -->
+            <li class="m2-fa">
+   <a href="/lgb/de/geodaten/liegenschaftskataster/geoinfodok-7-1/"      title="öffnet Seite: GeoInfoDok NEU (Referenz 7.1)"
+      > 
+       GeoInfoDok NEU (Referenz 7.1)</a> </li>
+<!-- m2_temp_front_44_3_masterlinks_items_internlinkblock -->
+            <li class="m2-fa">
+   <a href="/lgb/de/geodaten/portale-anwendungen/brandenburgviewer/#Geomaerker"      title="Kartenfehler melden"
+      > 
+       Kartenfehler melden</a> </li>
+<!-- m2_temp_front_44_3_masterlinks_items_internlinkblock -->
+            <li class="m2-fa">
+   <a href="/lgb/de/faq/"      title="öffnet Seite: FAQ"
+      > 
+       FAQ</a> </li>				    </ul>
+                                </div>
+                                <div class="columns small-12 medium-6 large-6">
+                                    
+				    <h3 class="bb-h6 italic">Portale und mehr...</h3>
+				    <ul class="bb-list-dark m2-list-dark-icon">
+					
+<!-- m2_temp_front_44_3_masterlinks_items_externer -->
+      <li class="m2-fa">
+    <a class="m2-fa m2-link-extern" 
+       href="https://bb-viewer.geobasis-bb.de" 
+rel="external"
+       title="öffnet Seite: Startseite BRANDENBURGVIEWER"
+       >BRANDENBURGVIEWER</a> </li>      
+<!-- m2_temp_front_44_3_masterlinks_items_externer -->
+      <li class="m2-fa">
+    <a class="m2-fa m2-link-extern" 
+       href="https://geobroker.geobasis-bb.de" 
+rel="external"
+       title="öffnet Seite: Startseite Internetshop GEOBROKER"
+       >GEOBROKER</a> </li>      
+<!-- m2_temp_front_44_3_masterlinks_items_externer -->
+      <li class="m2-fa">
+    <a class="m2-fa m2-link-extern" 
+       href="https://geoportal.brandenburg.de" 
+rel="external"
+       title="öffnet Seite: Startseite GEOPORTAL Brandenburg"
+       >GEOPORTAL Brandenburg</a> </li>      
+<!-- m2_temp_front_44_3_masterlinks_items_externer -->
+      <li class="m2-fa">
+    <a class="m2-fa m2-link-extern" 
+       href="https://lika.geobasis-bb.de" 
+rel="external"
+       title="öffnet Seite: Auskunftssystem Liegenschaftskataster Lika-Online"
+       >Lika-Online</a> </li>      
+<!-- m2_temp_front_44_3_masterlinks_items_externer -->
+      <li class="m2-fa">
+    <a class="m2-fa m2-link-extern" 
+       href="https://geobasis-bb.de/lgb/de/geodaten/grundstuecksmarkt/bodenrichtwert-portal/" 
+rel="external"
+       title="öffnet Seite: Bodenrichtwert-Portal"
+       >Bodenrichtwert-Portal</a> </li>      
+<!-- m2_temp_front_44_3_masterlinks_items_internlinkblock -->
+            <li class="m2-fa">
+   <a href="/lgb/de/rss-feeds/"      title="Zeigt RSS-Feeds"
+      > 
+       RSS-Feeds</a> </li>
+<!-- m2_temp_front_44_3_masterlinks_items_internlinkblock -->
+            <li class="m2-fa">
+   <a href="/lgb/de/sitemap/"      title="öffnet Seite: Sitemap"
+      > 
+       Sitemap</a> </li>
+<!-- m2_temp_front_44_3_masterlinks_items_internlinkblock -->
+            <li class="m2-fa">
+   <a href="/lgb/de/tag-der-geoinformation-kundentag-der-lgb/"      title="öffnet Seite: Tag der Geoinformation"
+      > 
+       Tag der Geoinformation - Kundentag der LGB</a> </li>				    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="medium-12 large-3 columns">
+                        <div id="bb-link-bar-right">
+                            <div class="row">
+                                <h2 class="bb-sr">Service-Links</h2>
+                                <div class="medium-6 large-12 columns">
+                                    
+				    <h3 class="bb-h6 italic">Weiterführende Links</h3>
+				    <ul class="bb-list-dark m2-list-dark-icon">
+                    <li><a rel="external" href="https://www.brandenburg.de" title="Link zur externen Seite: Landesportal Brandenburg">Landesportal Brandenburg</a></li>                    <li><a rel="external" href="https://service.brandenburg.de" title="Link zur externen Seite: Serviceportal Brandenburg">Serviceportal Brandenburg</a></li>					
+<!-- m2_temp_front_44_3_masterlinks_items_externer -->
+      <li class="m2-fa">
+    <a class="m2-fa m2-link-extern" 
+       href="https://mik.brandenburg.de/mik/de/" 
+rel="external"
+       title="externer Link zum Ministerium des Innern und für Kommunales"
+       >Ministerium des Innern und für Kommunales</a> </li>      
+<!-- m2_temp_front_44_3_masterlinks_items_externer -->
+      <li class="m2-fa">
+    <a class="m2-fa m2-link-extern" 
+       href="https://service.brandenburg.de/service/de/adressen/weitere-verzeichnisse/verzeichnisliste/~katasterbehoerden" 
+rel="external"
+       title="externer Link zum Serviceportal Brandenburg"
+       >Katasterbehörden des Landes Brandenburg</a> </li>      
+<!-- m2_temp_front_44_3_masterlinks_items_externer -->
+      <li class="m2-fa">
+    <a class="m2-fa m2-link-extern" 
+       href="http://www.adv-online.de" 
+rel="external"
+       title="externer Link Arbeitsgemeinschaft der Vermessungsverwaltung - AdV-Online"
+       >AdV-Online</a> </li>      
+<!-- m2_temp_front_44_3_masterlinks_items_externer -->
+      <li class="m2-fa">
+    <a class="m2-fa m2-link-extern" 
+       href="https://vergabemarktplatz.brandenburg.de" 
+rel="external"
+       title="externer Link zum Vergabemarktplatz"
+       >Vergabemarktplatz</a> </li>      				    </ul>
+
+                                    <div>
+                                    <ul class="bb-icon-container">
+                        <li><a href="https://www.youtube.com/@geobasis-bb" target="_blank"><i title="Zu den YouTube-Videos" class="bb-icon fa fa-youtube fa-lg"></i></a></li>                        </ul>                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row bb-area-footer-bar">
+                    <div class="columns">
+                        <div id="bb-footer-bar" class="row columns" >
+    <div class="hide-for-small-only medium-5 large-5" style="float:left">
+        <span class="hide-for-small-only" style="font-size:initial; float:left">2026 | Landesregierung Brandenburg</span>
+        <div style="clear:both;"></div>
+    </div>
+    <div class="small-12 medium-7 large-7" style="float:left">
+        <ul style="margin-bottom: 0px; list-style: none; line-height: 2; display:flex; justify-content: end; flex-wrap: wrap;">
+
+    <li class="bb-footer-items-right">
+        <a  href="/lgb/de/kontakt/"
+        title="Link zur Seite: Kontakt"
+        class="bb-footer-items-right">Kontakt</a>     </li>
+
+    <li class="bb-footer-items-right">
+        <a  href="/lgb/de/barrierefreiheit/"
+        title="Link zur Seite: Barrierefreiheit"
+        class="bb-footer-items-right">Barrierefreiheit</a>     </li>
+
+    <li class="bb-footer-items-right">
+        <a  href="/lgb/de/datenschutz/"
+        title="Link zur Seite: Datenschutz &ndash; Datenschutzerklärung"
+        class="bb-footer-items-right">Datenschutz</a>     </li>
+
+    <li class="bb-footer-items-right">
+        <a  href="/lgb/de/impressum/"
+        title="Link zur Seite: Impressum"
+        class="bb-footer-items-right">Impressum</a>     </li>
+</ul>    </div>
+</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</div>
+    <!-- all Vendor JavaScript Library !-->
+    <script src="https://style.brandenburg.de/js/vendor.min.js"></script>
+    <!-- ThemSwitch!-->
+    <script src="https://style.brandenburg.de/js/vendors/themeswitch.js"></script>
+    <!-- all brandenburg.de JavaScript !-->
+    <script src="https://style.brandenburg.de/js/finalApp.min.js"></script>
+    
+
+
+<!-- autocomplete -->
+      <script>
+         $(function() {
+            $( "#osssearchbox" ).autocomplete({
+               source: "/boss/web/autoc.php?index=geobasis-bb.de",
+               minLength: 2
+            });
+         });
+      </script> 
+<!-- Ende Autocomplete -->
+
+<script>
+    (function ($) {
+        "use strict";
+        var load = function (el, url) {
+            if (url) {
+                el.load(url);
+            }
+        }, init = function () {
+            $("[data-ajax-url]").each(function () {
+                var el = $(this);
+
+                load(el, el.data("ajax-url"));
+            });
+        };
+        init();
+        $("body").on("mais.load", function () {
+            init();
+        });
+    }(jQuery));
+
+    $.featherlightGallery.prototype.afterContent = function () {
+        var caption = this.$currentTarget.find('img').attr('data-caption');
+        this.$instance.find('.bb-feather-caption').remove();
+        $('<div class="bb-feather-caption">').html(caption).appendTo(this.$instance.find('.featherlight-content'));
+        var alt = this.$currentTarget.find('img').attr('data-alt');
+        $('img').attr('alt', alt);
+    };
+
+    $.featherlight.prototype.afterContent = function () {
+        var caption = this.$currentTarget.find('img').attr('data-caption');
+        this.$instance.find('.bb-feather-caption').remove();
+        $('<div class="bb-feather-caption">').html(caption).appendTo(this.$instance.find('.featherlight-content'));
+        var alt = this.$currentTarget.find('img').attr('data-alt');
+        $('img').attr('alt', alt);
+
+    };
+
+</script>
+    <script type="text/javascript" src="https://style.brandenburg.de/js/vendors/warenkorb/basket.js"></script>
+    
+
+<script>
+    $(document).ready(function () {
+
+        window.addEventListener("beforeprint", function () {
+            document.querySelectorAll("textarea").forEach((textarea) => {
+                const div = document.createElement("div");
+                div.textContent = textarea.value;
+                div.style.whiteSpace = "pre-wrap";
+                div.style.border = "1px solid black"; // Optional: für bessere Sichtbarkeit
+                div.style.padding = "5px";
+                div.style.minHeight = textarea.offsetHeight + "px"; // Behält Höhe bei
+                div.classList.add("print-replacement"); // Für späteres Wiederfinden
+
+                textarea.style.display = "none"; // Textarea verstecken
+                textarea.parentNode.insertBefore(div, textarea);
+            });
+        });
+
+        window.addEventListener("afterprint", function () {
+            document.querySelectorAll(".print-replacement").forEach((div) => {
+                const textarea = div.nextElementSibling; // Das ursprüngliche Textarea-Feld
+                if (textarea && textarea.tagName.toLowerCase() === "textarea") {
+                    textarea.style.display = "block"; // Wieder anzeigen
+                    div.parentNode.removeChild(div); // Sicheres Entfernen
+                }
+            });
+        });
+
+
+
+        $("body").prepend('<div id="overlay" class="ui-widget-overlay" style="z-index: 1001; display: none;"></div>');
+        $("body").prepend("<div id='PleaseWait' style='font-size:5rem;  display: none; z-index: 1002; height:200px; margin:0;  position: absolute; top: 30%; left: 50%; -ms-transform: translate(-30%, -50%); transform: translate(-30%, 50%); '><i class='fa fa-spinner fa-spin'></i></div>");
+        var back_to_top_button = ['<a href="#totop" class="back-to-top button bb-submit-button opensearchserver.ignore hide-for-small-only" title="Nach Oben"><i title="Nach Oben" class="fa fa-caret-up fa-lg"></i> Nach Oben </a>'].join("");
+        $("body").append(back_to_top_button);
+
+        $(".back-to-top").hide();
+
+        $('.datepicker').datepicker({
+                prevText: '&#x3c;zurück', prevStatus: '',
+                prevJumpText: '&#x3c;&#x3c;', prevJumpStatus: '',
+                nextText: 'Vor&#x3e;', nextStatus: '',
+                nextJumpText: '&#x3e;&#x3e;', nextJumpStatus: '',
+                currentText: 'heute', currentStatus: '',
+                todayText: 'heute', todayStatus: '',
+                clearText: '-', clearStatus: '',
+                closeText: 'schließen', closeStatus: '',
+                monthNames: ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni',
+                    'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'],
+                monthNamesShort: ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun',
+                    'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'],
+                dayNames: ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'],
+                dayNamesShort: ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'],
+                dayNamesMin: ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'],
+                showMonthAfterYear: false,
+                showOn: 'both',
+                dateFormat: 'dd.mm.yy',
+                buttonText: "<i class='fa fa-calendar'></i>"
+            }
+        );
+
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 200) {
+                    $('.back-to-top').fadeIn();
+                } else {
+                    $('.back-to-top').fadeOut();
+                }
+            });
+
+            $('.back-to-top').click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+        });
+
+        // JQuery-UI-ComboBox für <select>-Felder
+
+        $( function() {
+            $.widget( "custom.combobox", {
+                _create: function() {
+                    this.wrapper = $( "<span>" )
+                        .addClass( "custom-combobox small-12 medium-12 large-12" )
+                        .insertAfter( this.element );
+
+                    this.element.hide();
+                    this._createAutocomplete();
+                    this._createShowAllButton();
+                },
+
+                _createAutocomplete: function() {
+                    var selected = this.element.children( ":selected" ),
+                        value = selected.val() ? selected.text() : "";
+
+                    this.input = $( "<input>" )
+                        .appendTo( this.wrapper )
+                        .val( value )
+                        .attr( "title", "" )
+                        .addClass( "" )
+                        .autocomplete({
+                            delay: 0,
+                            minLength: 0,
+                            source: this._source.bind( this )
+                        })
+                        .tooltip({
+                            classes: {
+                                "ui-tooltip": "ui-state-highlight"
+                            }
+                        });
+
+                    this._on( this.input, {
+                        autocompleteselect: function( event, ui ) {
+                            ui.item.option.selected = true;
+                            this._trigger( "select", event, {
+                                item: ui.item.option
+                            });
+                        },
+
+                        autocompletechange: "_removeIfInvalid"
+                    });
+                },
+
+                _createShowAllButton: function() {
+                    var input = this.input,
+                        wasOpen = false;
+
+                    $( "<a>" )
+                        .attr( "tabIndex", -1 )
+                        .attr( "title", "Alle anzeigen" )
+                        .tooltip()
+                        .appendTo( this.wrapper )
+                        .button({
+                            icons: {
+                                primary: "ui-icon-triangle-1-s"
+                            },
+                            text: false
+                        })
+                        .removeClass( "ui-corner-all" )
+                        .addClass( "custom-combobox-toggle ui-corner-right" )
+                        .on( "mousedown", function() {
+                            wasOpen = input.autocomplete( "widget" ).is( ":visible" );
+                        })
+                        .on( "click", function() {
+                            input.trigger( "focus" );
+
+                            // Close if already visible
+                            if ( wasOpen ) {
+                                return;
+                            }
+
+                            // Pass empty string as value to search for, displaying all results
+                            input.autocomplete( "search", "" );
+                        });
+                },
+
+                _source: function( request, response ) {
+                    var matcher = new RegExp( $.ui.autocomplete.escapeRegex(request.term), "i" );
+                    response( this.element.children( "option" ).map(function() {
+                        var text = $( this ).text();
+                        if ( this.value && ( !request.term || matcher.test(text) ) )
+                            return {
+                                label: text,
+                                value: text,
+                                option: this
+                            };
+                    }) );
+                },
+
+                _removeIfInvalid: function( event, ui ) {
+
+                    // Selected an item, nothing to do
+                    if ( ui.item ) {
+                        return;
+                    }
+
+                    // Search for a match (case-insensitive)
+                    var value = this.input.val(),
+                        valueLowerCase = value.toLowerCase(),
+                        valid = false;
+                    this.element.children( "option" ).each(function() {
+                        if ( $( this ).text().toLowerCase() === valueLowerCase ) {
+                            this.selected = valid = true;
+                            return false;
+                        }
+                    });
+
+                    // Found a match, nothing to do
+                    if ( valid ) {
+                        return;
+                    }
+
+                    // Remove invalid value
+                    this.input
+                        .val( "" )
+                        .attr( "title", value + " wurde nicht gefunden." )
+                        .tooltip( "open" );
+                    this.element.val( "" );
+                    this._delay(function() {
+                        this.input.tooltip( "close" ).attr( "title", "" );
+                    }, 2500 );
+                    this.input.autocomplete( "instance" ).term = "";
+                },
+
+                _destroy: function() {
+                    this.wrapper.remove();
+                    this.element.show();
+                }
+            });
+
+            $( ".bb_combobox" ).combobox();
+            $( "#toggle" ).on( "click", function() {
+                $( ".bb_combobox" ).toggle();
+            });
+        } );
+
+
+        //LSP:BusBB: Button mit Klasse toogleout öffnet alle Accordion mit Klasse busbb-acordion
+        $('.toggleout').click(function () {
+            $(this).hide();
+            $('.togglein').show();
+            $('.busbb-accordion').show();
+            return false;
+        });
+
+        $('.togglein').click(function () {
+            $(this).hide();
+            $('.toggleout').show();
+            $('.busbb-accordion').hide();
+            return false;
+        });
+
+
+        var tilde = window.location.href;
+        var tildeTilde = tilde.split('~');
+        var myanchor = tildeTilde[1];
+        if (typeof myanchor != "undefined" && $('#' + myanchor).length) {
+            $('html, body').animate({
+                'scrollTop': $('#' + myanchor).offset().top
+            }, 300);
+        }
+        $('form').submit(function () {
+
+            var pass = true;
+            //some validations
+
+            if (pass == false) {
+                return false;
+            }
+           // $("#overlay, #PleaseWait").show();
+
+            return true;
+        });
+    });
+
+    /**
+     * copy local Links to Zwischenablage
+     * @param myInput
+     */
+    function myLinkCopyFunction(myInput) {
+        var copyText = document.getElementById(myInput).value;
+        var elem = document.createElement("textarea");
+        document.body.appendChild(elem);
+        elem.value = copyText;
+        elem.select();
+        document.execCommand("copy");
+        document.body.removeChild(elem);
+        /* Alert the copied text */
+        alert("Kopiert: " + copyText);
+    }
+
+    let codeText = document.querySelector('#code-text');
+    let handleCopyClick = document.querySelector('#copy-code');
+
+    if(handleCopyClick){
+        handleCopyClick.addEventListener('click', () => {
+            let text = codeText.textContent;
+            navigator.clipboard.writeText(`${text} `);
+
+        })
+    };
+
+
+    // Nur für SERVICE -> BUSBB Funktionen
+    
+
+</script>
+
+<script type="text/javascript">
+
+    <!-- path to viewer config and build dir -->
+
+    window.MpConfigPath = '/bbviewer2/';
+    window.MpMastercodePath = '/bbviewer2/';
+
+    document.addEventListener('mp-addons-init', function (e) {
+
+
+        
+        //console.log('Marker ueber Suche.');
+        //console.log(MpJsApi.getMarkerAsPointCoords());
+        //console.log('Marker aus Karte.');
+        //console.log(MpJsApi.getMarkerCoords());
+        //console.log('aufruf addmarker.');
+
+    }       , false);
+
+
+    document.addEventListener('mpjsapi-ready', function (e) {
+        //console.log('mpjsapi-ready.');
+        //console.log(MpJsApi.getMarkerAsPointCoords());
+    }, false);
+
+
+
+    /**
+     * Gibt alle Koordinaten wieder, welche über die Suche erstellt wurden
+     */
+    function getSearchMarker()  {
+        //console.log(MpJsApi.getMarkerAsPointCoords());
+    }
+
+    /**
+     * Gibt alle Koordinaten wieder, welche über addMarker erstellt wurden
+     */
+    function getMapMarker()  {
+        //console.log(MpJsApi.getMarkerCoords());
+    }
+
+
+    function addOnClickMarker(coordinate) {
+
+        MpJsApi.removeMarker(999);
+
+        var html = '<div class="trennung karte_marker" ><button style="color: #9c0606; float: right; padding: 0 5px;" onclick="removeMarker(); return false;">X</button><div>Sie haben folgende Koordinaten für ihren Standort gesetzt: '+coordinate+'</div></div>';
+        MpJsApi.addHTMLMarker(coordinate, { color: "green", id: 999, popup: { hoverContent: html, content: html, className: "karte-tp-popup"} });
+        MpJsApi.toggleMarkerTooltip(999, true)
+        var coordinate_click = coordinate;
+        //console.log('coordinate_click');
+        //console.log(coordinate_click);
+
+
+    }
+    function removeMarker() {
+        MpJsApi.removeMarker(999);
+
+    }
+
+    function setAddMarkerOnClick() {
+        MpJsApi.setAddMarkerOnClick(true, addOnClickMarker);
+    }
+
+
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const dependencies = [
+            { id: "bbvz", script: "https://style.brandenburg.de/js/vendors/bbvz.js" }
+        ];
+
+        dependencies.forEach(dep => {
+            const element = document.getElementById(dep.id);
+            if (element) {
+                //console.log(`'${dep.id}' gefunden. Lade '${dep.script}'...`);
+                const script = document.createElement("script");
+                script.src = dep.script;
+                //script.onload = () => console.log(`Skript '${dep.script}' erfolgreich geladen.`);
+                //script.onerror = () => console.error(`Fehler beim Laden von '${dep.script}'.`);
+                document.body.appendChild(script);
+            } else {
+                //console.log(`'${dep.id}' wurde nicht gefunden. '${dep.script}' wird nicht geladen.`);
+            }
+        });
+    });
+
+
+</script>
+
+
+
+
+
+
+
+</body>

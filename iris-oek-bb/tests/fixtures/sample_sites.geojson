@@ -1,0 +1,372 @@
+{
+ "type": "FeatureCollection",
+ "name": "synthetic_bb_flaechenpool",
+ "crs": {
+  "type": "name",
+  "properties": {
+   "name": "urn:ogc:def:crs:EPSG::25833"
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "BB-001",
+    "name": "  Streuobstwiese   Nord ",
+    "gemeinde": "Bad Belzig",
+    "gemarkung": "Belzig",
+    "status": "Umgesetzt",
+    "flaeche": "1,0",
+    "flaeche_einheit": "ha",
+    "oekopunkte": 12500
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       368000.0,
+       5807000.0
+      ],
+      [
+       368100.0,
+       5807000.0
+      ],
+      [
+       368100.0,
+       5807100.0
+      ],
+      [
+       368000.0,
+       5807100.0
+      ],
+      [
+       368000.0,
+       5807000.0
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "BB-002",
+    "name": "Moorrandfläche (declared area deviates from geometry)",
+    "gemeinde": "Märkisch-Oderland",
+    "gemarkung": "Müncheberg",
+    "status": "in Planung",
+    "flaeche": "2,5",
+    "flaeche_einheit": "ha",
+    "oekopunkte": null
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       368500.0,
+       5807000.0
+      ],
+      [
+       368750.0,
+       5807000.0
+      ],
+      [
+       368750.0,
+       5808000.0
+      ],
+      [
+       368500.0,
+       5808000.0
+      ],
+      [
+       368500.0,
+       5807000.0
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "BB-003",
+    "name": "Feuchtwiese (self-intersecting ring)",
+    "gemeinde": "Teltow",
+    "gemarkung": "Teltow",
+    "status": "Anerkannt",
+    "flaeche": "5000",
+    "flaeche_einheit": "m²",
+    "oekopunkte": 8000
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       369000.0,
+       5807000.0
+      ],
+      [
+       369100.0,
+       5807100.0
+      ],
+      [
+       369100.0,
+       5807000.0
+      ],
+      [
+       369000.0,
+       5807100.0
+      ],
+      [
+       369000.0,
+       5807000.0
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": null,
+    "name": "Site without identifier",
+    "gemeinde": "Cottbus",
+    "gemarkung": "Cottbus",
+    "status": "geplant",
+    "flaeche": "1200",
+    "flaeche_einheit": "m2",
+    "oekopunkte": null
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       370000.0,
+       5807000.0
+      ],
+      [
+       370050.0,
+       5807000.0
+      ],
+      [
+       370050.0,
+       5807050.0
+      ],
+      [
+       370000.0,
+       5807050.0
+      ],
+      [
+       370000.0,
+       5807000.0
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "BB-001",
+    "name": "Duplicate of BB-001",
+    "gemeinde": "Bad Belzig",
+    "gemarkung": "Belzig",
+    "status": "Umgesetzt",
+    "flaeche": "1,0",
+    "flaeche_einheit": "ha",
+    "oekopunkte": 12500
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       368000.0,
+       5807000.0
+      ],
+      [
+       368100.0,
+       5807000.0
+      ],
+      [
+       368100.0,
+       5807100.0
+      ],
+      [
+       368000.0,
+       5807100.0
+      ],
+      [
+       368000.0,
+       5807000.0
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "BB-006",
+    "name": "Line instead of polygon",
+    "gemeinde": "Rathenow",
+    "gemarkung": "Rathenow",
+    "status": "geplant",
+    "flaeche": "400",
+    "flaeche_einheit": "m2",
+    "oekopunkte": null
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      371000.0,
+      5807000.0
+     ],
+     [
+      371100.0,
+      5807050.0
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "BB-007",
+    "name": "No geometry",
+    "gemeinde": "Luckau",
+    "gemarkung": "Luckau",
+    "status": "geplant",
+    "flaeche": "800",
+    "flaeche_einheit": "m2",
+    "oekopunkte": null
+   },
+   "geometry": null
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "BB-008",
+    "name": "Outside Brandenburg",
+    "gemeinde": "Unknown",
+    "gemarkung": "Unknown",
+    "status": "geplant",
+    "flaeche": "900",
+    "flaeche_einheit": "m2",
+    "oekopunkte": null
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       700000,
+       5300000
+      ],
+      [
+       700100,
+       5300000
+      ],
+      [
+       700100,
+       5300100
+      ],
+      [
+       700000,
+       5300100
+      ],
+      [
+       700000,
+       5300000
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "BB-009",
+    "name": "Unknown status, no unit",
+    "gemeinde": "Königs Wusterhausen",
+    "gemarkung": "Wildau",
+    "status": "Sonderfall",
+    "flaeche": "3000",
+    "flaeche_einheit": null,
+    "oekopunkte": null
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       372000.0,
+       5807000.0
+      ],
+      [
+       372060.0,
+       5807000.0
+      ],
+      [
+       372060.0,
+       5807050.0
+      ],
+      [
+       372000.0,
+       5807050.0
+      ],
+      [
+       372000.0,
+       5807000.0
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "BB-010",
+    "name": "Unparseable area",
+    "gemeinde": "Eberswalde",
+    "gemarkung": "Finow",
+    "status": "geplant",
+    "flaeche": "abc",
+    "flaeche_einheit": "ha",
+    "oekopunkte": null
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       373000.0,
+       5807000.0
+      ],
+      [
+       373080.0,
+       5807000.0
+      ],
+      [
+       373080.0,
+       5807080.0
+      ],
+      [
+       373000.0,
+       5807080.0
+      ],
+      [
+       373000.0,
+       5807000.0
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

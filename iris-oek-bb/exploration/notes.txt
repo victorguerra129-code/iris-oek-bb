@@ -1,0 +1,125 @@
+Test date and time: 28 October 2026, 14:50 (German local time)
+
+Request: https://inspire.brandenburg.de/services/oekokonto_wfs?service=WFS&request=GetCapabilities
+
+Result: Redirect to geobasis-bb.de/lgb/de/dienstleister/inspire-zentrale/ (HTML, not XML)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+py test: Test date and time: 29 October 2026, 11:20 (German local time)
+
+***********************////////////////////-----------------------
+test_geometry.py
+Reloaded modules: oekokonto_harvester, oekokonto_harvester.config, oekokonto_harvester.geometry, oekokonto_harvester.quality, oekokonto_harvester.normalize
+*********************/////////////////////---------------------
+test_loader
+
+Reloaded modules: oekokonto_harvester, oekokonto_harvester.geometry
+**************************//////////////////--------------
+oek-bb/tests/test_normalize.py --wdir
+Reloaded modules: oekokonto_harvester, oekokonto_harvester.config, oekokonto_harvester.quality, oekokonto_harvester.loader
+***********************************///////////-----------------------
+oek-bb/tests/test_quality.py --wdir
+Reloaded modules: oekokonto_harvester, oekokonto_harvester.config, oekokonto_harvester.geometry, oekokonto_harvester.quality, oekokonto_harvester.normalize
+*********************///////////////////-----------------
+oek-bb/tests/test_sql_guard.py --wdir
+Reloaded modules: oekokonto_harvester, oekokonto_harvester.quality
+*******************//////////////////---------------
+oek-bb/tests/test_wfs_client.py --wdir
+Reloaded modules: oekokonto_harvester, oekokonto_harvester.config, oekokonto_harvester.quality, oekokonto_harvester.loader
+*************************/////////////////----------
+run.py --wdir
+Reloaded modules: oekokonto_harvester, oekokonto_harvester.config, oekokonto_harvester.wfs_client, oekokonto_harvester.geometry, oekokonto_harvester.quality, oekokonto_harvester.normalize, conftest
+usage: oekokonto_harvester [-h] {init-db,check-db,run} ...
+oekokonto_harvester: error: the following arguments are required: command
+An exception has occurred, use %tb to see the full traceback.
+
+SystemExit: 2
+*****************************////////////----------------------
+pytest.main([])
+\============================= test session starts =============================
+platform win32 -- Python 3.11.18, pytest-9.2.0, pluggy-1.6.0
+rootdir: C:\Users\R61pr001\Pictures\iris-oek-bb
+configfile: pytest.ini
+testpaths: tests
+plugins: platformdirs-4.12.3
+collected 94 items                                                             
+
+tests\test_geometry.py \.\.\.\.\.\.\.\.\.\.\.\.\.                                     [ 13%]
+tests\test_loader_db.py ssssssssss                                       [ 24%]
+tests\test_normalize.py \.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.               [ 60%]
+tests\test_quality.py \.\.                                                 [ 62%]
+tests\test_sql_guard.py \.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.                     [ 92%]
+tests\test_wfs_client.py \.\.\.\.\.\.\.                                         [100%]\
+
+======================= 84 passed, 10 skipped in 3.08s ========================
+Out[4]: <ExitCode.OK: 0>
+
+
+
+***************************////////////////-------------------
+%run scripts/run.py run --source fixture --skip-load
+{
+  "run": {
+    "source": "fixture",
+    "source_url": "fixture://sample_sites.geojson",
+    "layer": "bb_flaechenpool"
+  },
+  "total_processed": 10,
+  "outcomes": {
+    "ok": 4,
+    "repaired": 1,
+    "rejected": 5
+  },
+  "rejection_reasons": {
+    "missing_site_id": 1,
+    "duplicate_site_id": 1,
+    "no_polygonal_geometry": 1,
+    "missing_geometry": 1,
+    "outside_plausible_bounds": 1
+  },
+  "warnings": {
+    "area_mismatch": 1,
+    "area_unit_missing": 1,
+    "unmapped_status": 1,
+    "unparseable_area": 1
+  }
+}
+---------********///////////////////
+txt = open(r"reports\quality_issues.csv", encoding="utf-8").read(); print("NaN" in txt, txt.count("_source_geom_wkt"))
+False 5
